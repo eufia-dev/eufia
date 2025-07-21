@@ -1,34 +1,6 @@
-<script>
-  let email = '';
-  let message = '';
-  let sending = false;
-  let success = false;
-  let errorMsg = '';
-
-  async function handleSubmit() {
-    sending = true;
-    errorMsg = '';
-    success = false;
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, message })
-      });
-      if (res.ok) {
-        success = true;
-        email = '';
-        message = '';
-      } else {
-        const { error } = await res.json();
-        errorMsg = error ?? 'Ha ocurrido un error. Inténtalo de nuevo más tarde.';
-      }
-    } catch (err) {
-      errorMsg = 'Ha ocurrido un error. Inténtalo de nuevo más tarde.';
-    } finally {
-      sending = false;
-    }
-  }
+<script lang="ts">
+  import { enhance } from '$lib/form';
+  export let form: any;
 </script>
 
 <svelte:head>
@@ -53,27 +25,26 @@
 
 <section class="contact">
   <h3>¿Hablamos?</h3>
-  <form class="contact-form" on:submit|preventDefault={handleSubmit}>
+  <form class="contact-form" method="POST" use:enhance>
     <input
       type="email"
+      name="email"
       placeholder="Tu correo electrónico"
-      bind:value={email}
       required
     />
     <textarea
+      name="message"
       placeholder="Cuéntanos tu caso (opcional)"
       rows="4"
-      bind:value={message}
     ></textarea>
-    <button type="submit" disabled={sending}>
-      {sending ? 'Enviando…' : 'Quiero saber más'}
+    <button type="submit">
+      Quiero saber más
     </button>
   </form>
-  {#if success}
+  {#if form?.success}
     <p class="success">¡Gracias! Nos pondremos en contacto contigo muy pronto.</p>
-  {/if}
-  {#if errorMsg}
-    <p class="error">{errorMsg}</p>
+  {:else if form?.error}
+    <p class="error">{form.error}</p>
   {/if}
 </section>
 

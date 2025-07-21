@@ -1,8 +1,11 @@
 import nodemailer from 'nodemailer';
 
 export async function POST({ request }) {
+  console.log('POST');
   try {
     const { email, message } = await request.json();
+
+    console.log(request);
 
     if (!email) {
       return new Response(JSON.stringify({ error: 'Email requerido' }), { status: 400 });
@@ -20,8 +23,14 @@ export async function POST({ request }) {
         : undefined
     });
 
+    console.log(process.env.SMTP_HOST);
+    console.log(process.env.SMTP_PORT);
+    console.log(process.env.SMTP_SECURE);
+    console.log(process.env.SMTP_USER);
+    console.log(process.env.SMTP_PASS);
+
     await transporter.sendMail({
-      from: 'web@eufia.eu',
+      from: 'info@eufia.eu',
       to: 'info@eufia.eu',
       subject: 'Nuevo contacto desde eufia.eu',
       text: `Email: ${email}\nMensaje: ${message ?? ''}`,

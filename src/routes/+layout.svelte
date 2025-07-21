@@ -1,15 +1,15 @@
 <script>
   import { webVitals } from '$lib/vitals';
-  import { browser } from '$app/env';
-  import { page } from '$app/stores';
+  import { browser } from '$app/environment';
+  import { page } from '$app/state';
   import '../app.css';
 
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
   $: if (browser && analyticsId) {
     webVitals({
-      path: $page.url.pathname,
-      params: $page.params,
+      path: page.url.pathname,
+      params: page.params,
       analyticsId
     });
   }

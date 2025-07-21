@@ -1,19 +1,20 @@
-import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
+// vitals.js  – compatible with web-vitals ≥ 5.0
+import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'; // ↩️  new “on*” APIs
 
 const vitalsUrl = 'https://vitals.vercel-analytics.com/v1/vitals';
 
+/**
+ * Detect the user’s effective connection type (4g/3g/2g/slow-2g) if supported.
+ */
 function getConnectionSpeed() {
-  return 'connection' in navigator &&
-    navigator['connection'] &&
-    'effectiveType' in navigator['connection']
-    ? // @ts-ignore
-      navigator['connection']['effectiveType']
-    : '';
+  // modern browsers expose navigator.connection.effectiveType
+  return navigator?.connection?.effectiveType ?? '';
 }
 
 /**
- * @param {import("web-vitals").Metric} metric
- * @param {{ params: { [s: string]: any; } | ArrayLike<any>; path: string; analyticsId: string; debug: boolean; }} options
+ * Send a single metric to the Vercel /analytics endpoint.
+ * @param {import('web-vitals').Metric} metric
+ * @param {{ params: Record<string,any>; path: string; analyticsId: string; debug?: boolean; }} options
  */
 function sendToAnalytics(metric, options) {
   const page = Object.entries(options.params).reduce(
@@ -22,11 +23,11 @@ function sendToAnalytics(metric, options) {
   );
 
   const body = {
-    dsn: options.analyticsId,
-    id: metric.id,
+    dsn: options.analyticsId,      // project-specific ID
+    id: metric.id,                 // unique per-page-load
     page,
     href: location.href,
-    event_name: metric.name,
+    event_name: metric.name,       // e.g. 'CLS', 'INP'
     value: metric.value.toString(),
     speed: getConnectionSpeed()
   };
@@ -36,30 +37,35 @@ function sendToAnalytics(metric, options) {
   }
 
   const blob = new Blob([new URLSearchParams(body).toString()], {
-    // This content type is necessary for `sendBeacon`
-    type: 'application/x-www-form-urlencoded'
+    type: 'application/x-www-form-urlencoded' // required for sendBeacon()
   });
+
   if (navigator.sendBeacon) {
     navigator.sendBeacon(vitalsUrl, blob);
-  } else
+  } else {
     fetch(vitalsUrl, {
-      body: blob,
       method: 'POST',
+      body: blob,
       credentials: 'omit',
       keepalive: true
     });
+  }
 }
 
 /**
- * @param {any} options
+ * Wire up Core Web Vitals + supporting metrics.
+ * Call this once from your app’s client entry.
  */
 export function webVitals(options) {
   try {
-    getFID((metric) => sendToAnalytics(metric, options));
-    getTTFB((metric) => sendToAnalytics(metric, options));
-    getLCP((metric) => sendToAnalytics(metric, options));
-    getCLS((metric) => sendToAnalytics(metric, options));
-    getFCP((metric) => sendToAnalytics(metric, options));
+    // Core Web Vitals (Mar-2024 update promotes INP, deprecates FID)
+    onINP((m)  => sendToAnalytics(m, options)); // replaces getFID()
+    onLCP((m)  => sendToAnalytics(m, options));
+    onCLS((m)  => sendToAnalytics(m, options));
+
+    // Helpful supporting numbers
+    onTTFB((m) => sendToAnalytics(m, options));
+    onFCP((m)  => sendToAnalytics(m, options));
   } catch (err) {
     console.error('[Web Vitals]', err);
   }
