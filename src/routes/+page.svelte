@@ -1,6 +1,38 @@
 <script lang="ts">
   import { enhance } from '$lib/form';
+  import { tick } from 'svelte';
   export let form: any;
+
+  let emailInput: HTMLInputElement | null = null;
+  let messageInput: HTMLTextAreaElement | null = null;
+  let sending = false;
+  let sent = false;
+
+  function resetSent() {
+    sent = true;
+    setTimeout(() => {
+      sent = false;
+    }, 2000);
+  }
+
+  $: if (form?.success && emailInput && messageInput) {
+    emailInput.value = '';
+    messageInput.value = '';
+  }
+
+  const enhanceOptions = {
+    pending: () => {
+      sending = true;
+      sent = false;
+    },
+    result: async ({ response }: { response: Response }) => {
+      sending = false;
+      if (response.ok) {
+        await tick();
+        resetSent();
+      }
+    }
+  };
 </script>
 
 <svelte:head>
@@ -25,24 +57,38 @@
 
 <section class="contact">
   <h3>¿Hablamos?</h3>
-  <form class="contact-form" method="POST" use:enhance>
+  <form class="contact-form" method="POST" use:enhance={enhanceOptions}>
     <input
       type="email"
       name="email"
       placeholder="Tu correo electrónico"
       required
+      bind:this={emailInput}
     />
     <textarea
       name="message"
       placeholder="Cuéntanos tu caso (opcional)"
       rows="4"
+      bind:this={messageInput}
     ></textarea>
-    <button type="submit">
-      Quiero saber más
+    <button
+      type="submit"
+      class:enviado={sent}
+      disabled={sending || sent}
+    >
+      {#if sending}
+        <span class="spinner"></span> Enviando…
+      {:else if sent}
+        ✓ Enviado
+      {:else}
+        Quiero saber más
+      {/if}
     </button>
   </form>
   {#if form?.success}
-    <p class="success">¡Gracias! Nos pondremos en contacto contigo muy pronto.</p>
+    <p class="success">
+      ¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.
+    </p>
   {:else if form?.error}
     <p class="error">{form.error}</p>
   {/if}
@@ -99,19 +145,50 @@
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    position: relative;
   }
 
-  button:hover:enabled {
-    background: #e56d00;
+  button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  button.enviado {
+    background: #2ecc40;
+    color: #fff;
+  }
+
+  .spinner {
+    width: 1em;
+    height: 1em;
+    border: 2px solid #fff;
+    border-top: 2px solid var(--accent-color);
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 0.8s linear infinite;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 
   .success {
     margin-top: 1rem;
     color: green;
+    font-weight: 500;
+    text-align: center;
   }
 
   .error {
     margin-top: 1rem;
     color: red;
+    text-align: center;
   }
 </style>

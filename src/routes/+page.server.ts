@@ -1,4 +1,5 @@
 import type { Actions } from './$types';
+import type { Action } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
 import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } from '$env/static/private';
@@ -41,5 +42,5 @@ export const actions: Actions = {
       }
       return { success: false, error: 'Error interno del servidor' };
     }
-  }
-} satisfies Actions;
+  }) satisfies Action
+};
