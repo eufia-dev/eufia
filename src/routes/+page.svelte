@@ -38,157 +38,94 @@
 <svelte:head>
   <title>EUFIA – Consultoría de Inteligencia Artificial</title>
   <meta name="description" content="Consultoría de IA para PYMEs en Mallorca" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </svelte:head>
 
-<section class="hero">
-  <h1 class="logo">EUFIA</h1>
-  <h2>Impulsamos tu negocio con Inteligencia Artificial</h2>
-  <p>
-    Somos EUFIA, una consultora de IA con sede en Mallorca. Nos enfocamos en ayudar a las
-    pequeñas y medianas empresas a aprovechar el poder de la inteligencia artificial para
-    crecer, optimizar sus procesos y ganar ventaja competitiva.
-  </p>
-  <p>
-    Nuestro nombre proviene de la palabra griega antigua <em>εὐφυΐα</em> (euphyía), que significa
-    ingenio o buen juicio; ese es el espíritu que aportamos a cada proyecto.
-  </p>
-</section>
+<div class="container mx-auto px-4 py-8">
+  <!-- Hero Section (sin card) -->
+  <section class="text-center mb-16">
+    <div class="flex items-center justify-center gap-20">
+      <img src="/eufia_light_rectangular_transparent.svg" alt="EUFIA" class="w-100" />
+    </div>
+    <h2 class="text-xl md:text-2xl font-medium mb-8">
+      Impulsamos tu negocio con <span class="font-semibold">Inteligencia Artificial</span>
+    </h2>
+    <div class="max-w-6xl mx-auto space-y-8">
+      <p class="text-lg">
+        Somos EUFIA, una consultora de IA con sede en
+        <span class="font-medium text-primary">Mallorca</span>. 
+        Ayudamos a pequeñas y medianas empresas a aprovechar el poder de la Inteligencia
+        Artificial para optimizar sus procesos, reducir costes y ganar ventaja competitiva.
+      </p>
+      <p class="text-secondary">
+        Nuestro nombre se inspira en el término griego antiguo εὐφυΐα (euphyía),
+        que significa "inteligencia natural".
+        Eufia nace precisamente de esa idea: fusionar el talento natural de las personas con la potencia transformadora de la Inteligencia Artificial.
+      </p>
+    </div>
+  </section>
 
-<section class="contact">
-  <h3>¿Hablamos?</h3>
-  <form class="contact-form" method="POST" use:enhance={enhanceOptions}>
-    <input
-      type="email"
-      name="email"
-      placeholder="Tu correo electrónico"
-      required
-      bind:this={emailInput}
-    />
-    <textarea
-      name="message"
-      placeholder="Cuéntanos tu caso (opcional)"
-      rows="4"
-      bind:this={messageInput}
-    ></textarea>
-    <button
-      type="submit"
-      class:enviado={sent}
-      disabled={sending || sent}
-    >
-      {#if sending}
-        <span class="spinner"></span> Enviando…
-      {:else if sent}
-        ✓ Enviado
-      {:else}
-        Quiero saber más
+  <!-- Contact Section -->
+  <section class="max-w-md mx-auto">
+    <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8">
+      <h3 class="text-2xl font-semibold mb-6 text-center">¿Hablamos?</h3>
+      
+      <form class="space-y-4" method="POST" use:enhance={enhanceOptions}>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+            bind:this={emailInput}
+            class="w-full px-4 py-3 bg-default border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200"
+          />
+        </div>
+        
+        <div>
+          <textarea
+            name="message"
+            placeholder="Cuéntanos tu caso (opcional)"
+            rows="4"
+            bind:this={messageInput}
+            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200 resize-none"
+          ></textarea>
+        </div>
+        
+        <button
+          type="submit"
+          disabled={sending || sent}
+          class="w-full py-3 px-6 font-semibold rounded-lg transition-all duration-200
+            flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowe
+            shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
+            {sent ? 'bg-green-500' : 'bg-brand'} text-white"
+        >
+          {#if sending}
+            <span class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            Enviando…
+          {:else if sent}
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            ¡Enviado!
+          {:else}
+            Quiero saber más
+          {/if}
+        </button>
+      </form>
+
+      <!-- Success/Error Messages -->
+      {#if form?.success}
+        <div class="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+          <p class="text-green-700 text-center font-medium">
+            ¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.
+          </p>
+        </div>
+      {:else if form?.error}
+        <div class="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+          <p class="text-red-700 text-center">{form.error}</p>
+        </div>
       {/if}
-    </button>
-  </form>
-  {#if form?.success}
-    <p class="success">
-      ¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.
-    </p>
-  {:else if form?.error}
-    <p class="error">{form.error}</p>
-  {/if}
-</section>
+    </div>
+  </section>
+</div>
 
-<style>
-  .hero {
-    text-align: center;
-    margin-top: 4rem;
-  }
-
-  .logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--accent-color);
-    margin: 0;
-  }
-
-  .hero h2 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  .contact {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-form {
-    width: 100%;
-    max-width: 420px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  input,
-  textarea {
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 4px;
-    font-family: inherit;
-  }
-
-  button {
-    padding: 0.75rem 1rem;
-    background: var(--accent-color);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    position: relative;
-  }
-
-  button:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-  }
-
-  button.enviado {
-    background: #2ecc40;
-    color: #fff;
-  }
-
-  .spinner {
-    width: 1em;
-    height: 1em;
-    border: 2px solid #fff;
-    border-top: 2px solid var(--accent-color);
-    border-radius: 50%;
-    display: inline-block;
-    animation: spin 0.8s linear infinite;
-    margin-right: 0.5em;
-    vertical-align: middle;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  .success {
-    margin-top: 1rem;
-    color: green;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  .error {
-    margin-top: 1rem;
-    color: red;
-    text-align: center;
-  }
-</style>
