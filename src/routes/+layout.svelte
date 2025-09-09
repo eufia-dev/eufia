@@ -28,7 +28,9 @@
   <link rel="canonical" href="https://www.eufia.eu/" />
 </svelte:head>
 
-<main class="p-4 min-h-screen text-primary bg-gradient-to-br from-blue-50 via-orange-50 to-blue-100">
+<main class="p-4 min-h-screen text-primary
+  bg-gradient-to-br from-blue-50 via-orange-50 to-blue-100"
+>
   <slot />
 </main>
 

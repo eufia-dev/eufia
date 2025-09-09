@@ -25,4 +25,20 @@
   .bg-default {
     @apply bg-stone-50;
   }
+
+  .bg-primary {
+    @apply bg-white;
+  }
+
+  .bg-secondary {
+    @apply bg-stone-100;
+  }
+
+  .border-default {
+    @apply border-stone-200;
+  }
+
+  .ring-default {
+    @apply ring-stone-400;
+  }
 }
