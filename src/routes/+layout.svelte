@@ -21,7 +21,7 @@
   <meta property="og:title" content="Consultoría de Inteligencia Artificial en Mallorca | Eufia" />
   <meta property="og:description" content="Eufia, consultoría de Inteligencia Artificial en Mallorca" />
   <meta property="og:url" content="https://www.eufia.eu/" />
-  <meta property="og:image" content="https://www.eufia.eu/eufia_light_rectangular.png" />
+  <meta property="og:image" content="https://www.eufia.eu/eufia.png" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="512" />
 

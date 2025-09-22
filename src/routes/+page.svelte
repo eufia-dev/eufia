@@ -147,7 +147,7 @@
             <span class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
             Enviando…
           {:else if sent}
-            <span class="material-symbols-rounded">check</span>
+            <span class="material-symbols-rounded">check_circle</span>
             ¡Enviado!
           {:else}
             Quiero saber más
