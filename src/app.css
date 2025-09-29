@@ -41,4 +41,8 @@
   .ring-default {
     @apply ring-stone-400;
   }
+
+  .divide-default {
+    @apply divide-stone-200;
+  }
 }

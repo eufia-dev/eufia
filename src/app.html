@@ -1,40 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
   <head>
-    <title>Consultoría de Inteligencia Artificial en Mallorca | Eufia</title>
     <meta charset="utf-8" />
-    <link rel="icon" href="/eufia_small.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/eufia_small.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Eufia, consultoría de Inteligencia Artificial en Mallorca. Ayudamos a pymes a optimizar procesos, reducir costes y crecer con IA.">
-    
+    <meta http-equiv="content-language" content="es-ES" />
+    <link rel="icon" href="/eufia_small_rounded.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/eufia_small_rounded.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="max-image-preview:large" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "EUFIA",
-      "url": "https://www.eufia.eu/",
-      "logo": "https://www.eufia.eu/eufia_light.png",
-      "sameAs": ["https://www.linkedin.com/company/eufia"]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "EUFIA",
-      "url": "https://www.eufia.eu/"
-    }
-    </script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@300&display=swap"
       rel="stylesheet"
     />    
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.eufia.eu/#website",
+        "name": "EUFIA",
+        "url": "https://www.eufia.eu/",
+        "inLanguage": "es-ES",
+        "publisher": { "@id": "https://www.eufia.eu/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.eufia.eu/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://www.eufia.eu/#organization",
+        "name": "EUFIA",
+        "url": "https://www.eufia.eu/",
+        "description": "Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.eufia.eu/eufia.png"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.eufia.eu/eufia_1200.png"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/eufia",
+          "https://www.instagram.com/eufia_consulting"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mallorca",
+          "addressRegion": "Islas Baleares",
+          "addressCountry": "ES"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Mallorca" },
+          { "@type": "Place", "name": "Islas Baleares" },
+          { "@type": "Country", "name": "España" }
+        ],
+        "knowsAbout": [
+          "automatización de procesos",
+          "chatbots",
+          "agentes de IA",
+          "consultoría IA para PYMEs"
+        ],
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+34 686 733 922",
+          "email": "info@eufia.eu",
+          "availableLanguage": ["es", "ca", "en"]
+        }]
+      }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://www.eufia.eu/#service-automatizacion",
+          "name": "Automatización de procesos con IA",
+          "description": "Automatizamos procesos clave en tu negocio con inteligencia artificial: facturas, documentos, correos y tareas repetitivas. Ahorra tiempo, reduce errores y aumenta la eficiencia de tu empresa en Mallorca, Baleares y toda España.          ",
+          "serviceType": "Automatización con IA",
+          "inLanguage": "es-ES",
+          "provider": { "@id": "https://www.eufia.eu/#organization" },
+          "areaServed": [
+            { "@type": "Place", "name": "Mallorca" },
+            { "@type": "Place", "name": "Islas Baleares" },
+            { "@type": "Country", "name": "España" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "eligibleRegion": [
+              { "@type": "Place", "name": "Mallorca" },
+              { "@type": "Place", "name": "Islas Baleares" },
+              { "@type": "Country", "name": "España" }
+            ]
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.eufia.eu/#service-chatbots",
+          "name": "Chatbots inteligentes para empresas",
+          "description": "Creamos chatbots inteligentes a medida que atienden a tus clientes 24/7: responden consultas, agendan citas y gestionan solicitudes de forma automática. Con conocimiento propio e integración en tus herramientas de negocio, mejoran la atención al cliente y aumentan las conversiones.          ",
+          "serviceType": "Chatbots de IA",
+          "inLanguage": "es-ES",
+          "provider": { "@id": "https://www.eufia.eu/#organization" },
+          "areaServed": [
+            { "@type": "Place", "name": "Mallorca" },
+            { "@type": "Place", "name": "Islas Baleares" },
+            { "@type": "Country", "name": "España" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "eligibleRegion": [
+              { "@type": "Place", "name": "Mallorca" },
+              { "@type": "Place", "name": "Islas Baleares" },
+              { "@type": "Country", "name": "España" }
+            ]
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.eufia.eu/#service-agentes",
+          "name": "Agentes de IA a medida",
+          "description": "Desarrollamos agentes de IA personalizados que colaboran con tu equipo y se integran en tus sistemas para ejecutar procesos complejos, asistir en la toma de decisiones y aumentar la productividad de tu negocio.",
+          "serviceType": "Agentes de IA",
+          "inLanguage": "es-ES",
+          "provider": { "@id": "https://www.eufia.eu/#organization" },
+          "areaServed": [
+            { "@type": "Place", "name": "Mallorca" },
+            { "@type": "Place", "name": "Islas Baleares" },
+            { "@type": "Country", "name": "España" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "eligibleRegion": [
+              { "@type": "Place", "name": "Mallorca" },
+              { "@type": "Place", "name": "Islas Baleares" },
+              { "@type": "Country", "name": "España" }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
     
     %sveltekit.head%
   </head>

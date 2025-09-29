@@ -7,9 +7,16 @@ import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } from '$env/static/private'
 export const actions: Actions = {
   default: (async ({ request }) => {
     const data = await request.formData();
+
+    const website = data.get('website');
+    if (typeof website === 'string' && website.trim() !== '') {
+      await new Promise((r) => setTimeout(r, 400));
+      return { success: true };
+    }
+
     const email = data.get('email');
     const message = data.get('message');
-
+ 
     if (!email || typeof email !== 'string' || !email.trim()) {
       return { success: false, error: 'Email requerido' };
     }
