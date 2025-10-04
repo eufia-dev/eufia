@@ -18,13 +18,14 @@
     "prettier-plugin-svelte": "^3.4.0",
     "svelte": "^5.36.12",
     "svelte-check": "^4.3.0",
-    "typescript": "^5.8.3",
     "vite": "^7.0.5"
   },
   "type": "module",
   "dependencies": {
     "@fontsource-variable/saira": "^5.2.8",
     "@tailwindcss/vite": "^4.1.11",
+    "@tsparticles/slim": "^3.9.1",
+    "@tsparticles/svelte": "^3.1.1",
     "cookie": "^1.0.2",
     "nodemailer": "^7.0.5",
     "tailwindcss": "^4.1.11",

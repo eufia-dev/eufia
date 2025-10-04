@@ -1,17 +1,21 @@
 <script>
   import { webVitals } from '$lib/vitals';
   import { browser } from '$app/environment';
-  import '../app.css';
+  import { page } from '$app/state';
 
-  export let url;
+  import '../app.css';
+  
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
-  const siteBase = 'https://www.eufia.eu';
-  $: canonicalUrl = `${siteBase}${url?.pathname ?? '/'}`;
+  let mobileMenuOpen = false;
+  
+  function closeMobileMenu() {
+    mobileMenuOpen = false;
+  }
 
   $: if (browser && analyticsId) {
     webVitals({
-      path: url.pathname,
+      path: page.url.pathname,
       params: {},
       analyticsId
     });
@@ -21,32 +25,229 @@
 <svelte:head>
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Eufia"/>
+  <meta property="og:site_name" content="EUFIA"/>
   <meta property="og:title" content="Consultoría de Inteligencia Artificial en Mallorca | Eufia" />
   <meta property="og:description" content="Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas." />
-  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:url" content="https://www.eufia.eu/" />
   <meta property="og:image" content="https://www.eufia.eu/eufia_1200.png" />
+  <meta property="og:image:secure_url" content="https://www.eufia.eu/eufia_1200.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="EUFIA - Consultoría de IA en Mallorca" />
+  <meta property="og:image:alt" content="Eufia - Consultoría de IA en Mallorca" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Consultoría de Inteligencia Artificial en Mallorca | Eufia" />
   <meta name="twitter:description" content="Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas." />
   <meta name="twitter:image" content="https://www.eufia.eu/eufia_1200.png" />
-  <meta name="twitter:image:alt" content="EUFIA - Consultoría de IA en Mallorca" />
+  <meta name="twitter:image:alt" content="Eufia - Consultoría de IA en Mallorca" />
+  <meta name="twitter:url" content="https://www.eufia.eu/" />
+  <meta name="twitter:domain" content="eufia.eu" />
 
-  <link rel="canonical" href={canonicalUrl} />
-  <link rel="alternate" hrefLang="es-ES" href={canonicalUrl} />
-  <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+  <link rel="canonical" href="https://www.eufia.eu/" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.eufia.eu/" />
+  <link rel="alternate" hreflang="es" href="https://www.eufia.eu/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.eufia.eu/" />
 </svelte:head>
 
 <main class="min-h-screen text-primary bg-default">
+  <header
+    class="sticky top-0 z-40"
+  >
+    <div class="relative">
+      <div class="flex items-center justify-between gap-4 bg-gradient-to-b from-stone-50 via-stone-50 to-stone-50/90">
+        <a href="/" aria-label="Inicio">
+          <img src="/eufia_transparent.svg" alt="Eufia" class="w-28 mx-1 md:mx-4 my-2" />
+        </a>
+        <nav class="hidden px-8 py-4 md:flex items-center gap-8">
+          <div class="relative group left-1">
+            <a
+              href="/#servicios"
+              class="flex items-center gap-1 hover:text-brand transition-colors duration-200"
+            >
+              <span class="border-b border-transparent hover:border-brand transition-colors duration-200">Servicios</span>
+              <span class="material-symbols-rounded transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+            </a>
+            <div
+              class="absolute top-full left-0 mt-2 bg-primary border border-default rounded-md overflow-hidden
+                opacity-0 invisible max-h-0 group-hover:opacity-100 group-hover:visible group-hover:max-h-40
+                transition-all duration-250 z-50"
+            >
+              <div class="py-1">
+                <a href="/#agentes-ia" class="block px-4 py-2 group/item">
+                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
+                    Agentes IA
+                  </span>
+                </a>
+                <a href="/#chatbots" class="block px-4 py-2 group/item">
+                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
+                    Chatbots
+                  </span>
+                </a>
+                <a href="/#automatizaciones" class="block px-4 py-2 group/item">
+                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
+                    Automatizaciones
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="/#sectores"
+            class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
+          >
+            Sectores
+          </a>
+          <a href="/#beneficios"
+            class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
+          >
+            Beneficios
+          </a>
+          <a href="/#conocenos"
+            class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
+          >
+            Conócenos
+          </a>
+          <a href="/#contacto"
+            class="rounded-md border border-default bg-brand text-inverse px-3 py-1.5 hover:border-brand transition-colors duration-200"
+          >
+            Contacto
+          </a>
+        </nav>
+        <button
+          aria-label="Menú"
+          aria-expanded={mobileMenuOpen}
+          class="md:hidden mx-6 my-4 hover:text-brand transition-colors duration-200"
+          on:click={() => (mobileMenuOpen = !mobileMenuOpen)}
+        >
+          <span class="relative block w-6 h-6" aria-hidden="true">
+            <span
+              class="absolute left-0 right-0 top-1 block h-[2px] rounded bg-current transition-transform duration-200 ease-in-out"
+              class:translate-y-[7px]={mobileMenuOpen}
+              class:rotate-45={mobileMenuOpen}
+            ></span>
+            <span
+              class="absolute left-0 right-0 top-1/2 -translate-y-1/2 block h-[2px] rounded bg-current transition-opacity duration-200 ease-in-out"
+              class:opacity-0={mobileMenuOpen}
+            ></span>
+            <span
+              class="absolute left-0 right-0 bottom-1 block h-[2px] rounded bg-current transition-transform duration-200 ease-in-out"
+              class:-translate-y-[7px]={mobileMenuOpen}
+              class:-rotate-45={mobileMenuOpen}
+            ></span>
+          </span>
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-x-0 -bottom-14 h-14
+          bg-gradient-to-b from-stone-50/90 via-stone-50/60 to-transparent
+          {mobileMenuOpen ? 'w-0 duration-300' : 'w-full duration-100'}
+          transition-width ease-in-out"
+      ></div>
+    </div>
+  </header>
+
+  <div
+    class={`fixed inset-0 z-30 bg-default transform transition-transform duration-250 ease-in-out
+      ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+    role="dialog"
+    aria-modal="true"
+    aria-hidden={!mobileMenuOpen}
+  >
+    <nav class="mt-20 mb-10 px-6 z-40">
+      <a
+        href="/#servicios"
+        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
+        on:click={closeMobileMenu}
+      >
+        <span>Servicios</span>
+        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <div class="my-1 ml-1">
+        <a
+          href="/#agentes-ia"
+          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
+          on:click={closeMobileMenu}
+        >
+          <span>Agentes IA</span>
+          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="/#chatbots"
+          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
+          on:click={closeMobileMenu}
+        >
+          <span>Chatbots</span>
+          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="/#automatizaciones"
+          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
+          on:click={closeMobileMenu}
+        >
+          <span>Automatizaciones</span>
+          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+      <a
+        href="/#sectores"
+        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
+        on:click={closeMobileMenu}
+      >
+        <span>Sectores</span>
+        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a
+        href="/#beneficios"
+        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
+        on:click={closeMobileMenu}
+      >
+        <span>Beneficios</span>
+        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a
+        href="/#conocenos"
+        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
+        on:click={closeMobileMenu}
+      >
+        <span>Conócenos</span>
+        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a
+        href="/#contacto"
+        class="group relative flex items-center !text-xl py-2"
+        on:click={closeMobileMenu}
+      >
+        <span
+          class="relative z-10 inline-flex rounded-md border border-default bg-brand text-inverse
+            px-3 py-1.5 flex-none transition-[flex-grow,padding-right] duration-300 ease-in-out
+            group-hover:flex-grow group-hover:pr-12"
+        >
+          Contacto
+        </span>
+        <span
+          class="material-symbols-rounded absolute right-0 z-20 transition-all duration-300 ease-in-out
+            group-hover:text-inverse group-hover:-translate-x-2"
+        >
+          arrow_forward
+        </span>
+      </a>
+    </nav>
+  </div>
+
   <slot />
+  
   <footer class="bg-primary border-t border-default py-4">
     <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="/eufia_transparent.svg" alt="EUFIA" class="w-24" />
+        <img src="/eufia_transparent.svg" alt="Eufia" class="w-24" />
       </div>
 
       <div class="flex items-center gap-3 flex-wrap justify-center">
@@ -95,4 +296,3 @@
     </div>
   </footer>
 </main>
-

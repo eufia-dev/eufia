@@ -7,6 +7,18 @@
 
 @theme {
   --color-brand: #F05F00;
+  --color-inverse: #FAFAF9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 4rem;
+  }
 }
 
 @layer components {
@@ -16,10 +28,6 @@
 
   .text-secondary {
     @apply text-stone-600;
-  }
-
-  .text-brand {
-    @apply text-brand;
   }
 
   .bg-default {
