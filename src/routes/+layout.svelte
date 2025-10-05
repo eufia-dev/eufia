@@ -62,10 +62,10 @@
         <nav class="hidden px-8 py-4 md:flex items-center gap-8">
           <div class="relative group left-1">
             <a
-              href="/#servicios"
+              href="/#soluciones"
               class="flex items-center gap-1 hover:text-brand transition-colors duration-200"
             >
-              <span class="border-b border-transparent hover:border-brand transition-colors duration-200">Servicios</span>
+              <span class="border-b border-transparent hover:border-brand transition-colors duration-200">Soluciones</span>
               <span class="material-symbols-rounded transition-transform duration-200 group-hover:rotate-180">expand_more</span>
             </a>
             <div
@@ -156,11 +156,11 @@
   >
     <nav class="mt-20 mb-10 px-6 z-40">
       <a
-        href="/#servicios"
+        href="/#soluciones"
         class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
         on:click={closeMobileMenu}
       >
-        <span>Servicios</span>
+        <span>Soluciones</span>
         <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
       </a>
