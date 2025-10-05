@@ -2,28 +2,16 @@
   import { enhance } from '$lib/form';
   import { tick } from 'svelte';
   
-  export let form: any;
-
   let emailInput: HTMLInputElement | null = null;
   let messageInput: HTMLTextAreaElement | null = null;
   let sending = false;
   let sent = false;
 
-  function resetSent() {
-    sent = true;
-    setTimeout(() => (sent = false), 2000);
-  }
-
-  $: if (form?.success && emailInput && messageInput) {
-    emailInput.value = '';
-    messageInput.value = '';
-  }
-
   const enhanceOptions = {
     pending: () => { sending = true; sent = false; },
     result: async ({ response }: { response: Response }) => {
       sending = false;
-      if (response.ok) { await tick(); resetSent(); }
+      if (response.ok) { await tick(); sent = true; }
     }
   };
 </script>
@@ -57,7 +45,7 @@
             disabled:opacity-70 disabled:cursor-not-allowed border
             hover:shadow-xl transform hover:-translate-y-0.5
             hover:border-brand
-            {sent ? 'bg-green-600' : 'bg-brand'}">
+            {sent ? 'bg-green-600 hover:border-green-600' : 'bg-brand'}">
           {#if sending}
             <span class="w-5 h-5 border-2 border-inverse border-t-transparent rounded-full animate-spin"></span>
             Enviando…
@@ -68,33 +56,13 @@
             Quiero saber más
           {/if}
         </button>
-      </form>
-
-      {#if form?.success}
-        <div class="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-          <p class="text-green-700 text-center font-medium">
+        {#if sent}
+          <p class="text-center">
             ¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.
           </p>
-        </div>
-      {:else if form?.error}
-        <div class="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-          <p class="text-red-700 text-center">{form.error}</p>
-        </div>
-      {/if}
+        {/if}
+      </form>
     </div>
-  </div>
-
-  <div class="text-2xl md:text-4xl mt-8 text-center mx-auto flex flex-col md:flex-row
-    gap-4 items-center justify-center">
-    <img src="/eufia_transparent.svg" alt="Eufia" class="w-60 md:w-100" />
-    <p>
-      Hazlo <span class="font-semibold">fácil</span>. Hazlo con <span class="font-semibold text-brand">IA.</span>
-    </p>
-    <p class="max-w-6xl mx-auto text-secondary">
-      Nuestro nombre se inspira en el término griego antiguo εὐφυΐα (euphyía),
-      que significa "inteligencia natural".
-      Eufia nace precisamente de esa idea: fusionar el talento natural de las personas con la potencia transformadora de la Inteligencia Artificial.
-    </p>
   </div>
 </section>
 

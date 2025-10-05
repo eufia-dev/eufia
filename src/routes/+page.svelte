@@ -10,8 +10,6 @@
   import AboutSection from '$lib/components/sections/AboutSection.svelte';
   import ContactSection from '$lib/components/sections/ContactSection.svelte';
   import FAQSection from '$lib/components/sections/FAQSection.svelte';
-
-  export let form: any;
 </script>
 
 <svelte:head>
@@ -152,7 +150,7 @@
 
 <AboutSection />
 
-<ContactSection {form} />
+<ContactSection />
  
 <FAQSection />
  

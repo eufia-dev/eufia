@@ -20,7 +20,7 @@
             <span><strong>Acceso inteligente a datos:</strong> Consulta información sin buscar en múltiples sistemas</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="material-symbols-rounded text-blue-600 mt-0.5 flex-shrink-0">check_circle</span>
+            <span class="material-symbols-rounded tex-blue-600 mt-0.5 flex-shrink-0">check_circle</span>
             <span><strong>Ejecuta acciones:</strong> Agenda citas, crea tickets, gestiona reservas conversando</span>
           </li>
           <li class="flex items-start gap-3">
