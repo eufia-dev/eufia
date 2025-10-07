@@ -40,7 +40,7 @@
       </ul>
     </div>
 
-    <div class="w-full self-stretch">
+    <div class="w-full self-stretch h-69">
       <Chatbot />
     </div>
   </div>

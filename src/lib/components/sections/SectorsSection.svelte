@@ -12,7 +12,7 @@
       icon: 'home_work',
       title: 'Construcción y Vivienda',
       subtitle: 'Constructoras, reformas, inmobiliarias',
-      description: '- Presupuestos autogenerados a tu medida\n- Permisos y trámites automatizados'
+      description: '- Presupuestos autogenerados a tu medida\n- Permisos, trámites y documentación automatizados'
     },
     {
       icon: 'medical_services',
@@ -24,7 +24,7 @@
       icon: 'computer',
       title: 'Profesionales y Despachos',
       subtitle: 'Gestorías, abogados, inenieros',
-      description: '- Procesos administrativos automáticos\n- Asistente virtual para consultas y gestión de tareas'
+      description: '- Facturación y contabilidad automáticas\n- Asistente virtual para consultas y gestión de tareas'
     },
   ];
 </script>

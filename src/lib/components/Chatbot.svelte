@@ -95,7 +95,7 @@
 
 <div
   bind:this={containerEl}
-  class="w-full h-69 overflow-hidden flex flex-col justify-end gap-2 bg-secondary rounded-xl p-6 space-y-2"
+  class="w-full h-full overflow-hidden flex flex-col justify-end gap-2 bg-secondary rounded-xl p-6 space-y-2"
   aria-live="polite"
 >
   {#each examples[currentExampleIndex].slice(startIndex, visibleCount) as m, i (startIndex + i)}

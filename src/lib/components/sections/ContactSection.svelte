@@ -36,7 +36,7 @@
       <p class="text-lg mt-4">
         Analizamos tu negocio sin compromiso y te mostramos las oportunidades de IA que pueden adaptarse a tus necesidades.
       </p>
-      <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-20">
+      <div class="mt-6 flex-col sm:flex-row items-center justify-center gap-4 md:gap-20 hidden lg:flex">
         <img src="/eufia_transparent.svg" alt="EUFIA" class="w-30 md:w-40 lg:w-40" />
         <div class="text-center text-xl md:text-2xl">
           Hazlo <span class="font-semibold">fácil.</span> Hazlo con <span class="font-semibold text-brand">IA.</span>
@@ -94,6 +94,13 @@
             </p>
           {/if}
         </form>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-20 mx-auto lg:hidden">
+      <img src="/eufia_transparent.svg" alt="EUFIA" class="w-30 md:w-40 lg:w-40" />
+      <div class="text-center text-xl md:text-2xl">
+        Hazlo <span class="font-semibold">fácil.</span> Hazlo con <span class="font-semibold text-brand">IA.</span>
       </div>
     </div>
   </div>

@@ -53,16 +53,18 @@ export const integrations: IntegrationLogo[] = integrationFiles.map((file) => {
   return { src: `/integrations/${file}`, alt: name };
 });
 
-export const categories: string[][] = [
+export const carousels: string[][] = [
   [
-    'sap.png', 'odoo.png', 'sage.png', 'holded.png', 'business_central.png', 'a3erp.png', 'a3innuva.png', 'factura_directa.png',
-    'power_bi.png', 'google_workspace.png', 'microsoft_365.png', 'gmail.png', 'whatsapp.png',
-    'outlook.png', 'google_calendar.png', 'word.png', 'excel.png', 'teams.png', 'docusign.png'
+    'gmail.png', 'sap.png', 'meta.png', 'factorial.png', 'google_calendar.png', 'zendesk.png', 
+    'the_fork.png', 'postgresql.png', 'a3innuva.png', 'microsoft_365.png', 'santander.png',
+    'linkedin.png', 'docusign.png', 'chatgpt.png', 'google_workspace.png', 'bbva.png',
+    'shopify.png', 'holded.png', 'trello.png', 'word.png', 'quipu.png'
   ],
   [
-    'hubspot.png', 'salesforce.png', 'zoho.png', 'google_ads.png', 'linkedin.png', 'meta.png', 'shopify.png',
-    'freshdesk.png', 'zendesk.png', 'trello.png', 'jira.png', 'restoo.png', 'the_fork.png',
-    'chatgpt.png', 'claude.svg', 'gemini.png', 'postgresql.png', 'mongodb.png',
+    'odoo.png', 'hubspot.png', 'whatsapp.png', 'sage.png', 'freshdesk.png', 'excel.png',
+    'business_central.png', 'gemini.png', 'power_bi.png', 'jira.png', 'claude.svg',
+    'google_ads.png', 'caixabank.png', 'teams.png', 'a3erp.png', 'outlook.png',
+    'salesforce.png', 'restoo.png', 'factura_directa.png', 'mongodb.png', 'zoho.png'
   ]
 ];
 

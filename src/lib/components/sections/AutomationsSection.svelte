@@ -10,46 +10,44 @@
     <div class="text-center lg:text-left w-full">
       <h3 class="text-4xl font-semibold">Automatización de <span class="text-brand">procesos</span></h3>
       <p class="text-lg mt-6">
-        Tareas que se hacen solas, liberando a tu equipo del trabajo repetitivo. 
+        Procesos repetitivos totalmente automatizados, liberando tiempo al equipo.
       </p>
       
       <ul class="space-y-2.5 mt-6">
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
-            <span class="font-semibold">Gestión documental</span>: Clasifica, archiva y concilia facturas automáticamente
+            <span class="font-semibold">Contabilidad</span> y conciliación bancaria
           </span>
         </li>
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
-            <span class="font-semibold">Sincronización</span>: Pedidos, stock, clientes... todo actualizado entre sistemas
+            <span class="font-semibold">Informes automáticos</span> y sin esfuerzo
           </span>
         </li>
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
-            <span class="font-semibold">Flujos inteligentes</span>: Del email al sistema y la notificación sin tocar nada
+            <span class="font-semibold">Proyectos</span> y contratos agilizados
           </span>
         </li>
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
-            <span class="font-semibold">Informes automáticos</span>: Resúmenes, alertas y reportes sin crearlos manualmente
+            <span class="font-semibold">Sincronización</span> y flujos entre aplicaciones
           </span>
         </li>
       </ul>
-
-      <span class="font-semibold text-primary">Tú mantienes el control</span>: decides qué, cómo y cuándo automatizar.
     </div>
 
-    <div class="w-full self-stretch">
+    <div class="w-full h-69 self-stretch">
       <Automation />
     </div>
   </div>
   <p class="mt-10 lg:mt-12 text-lg">
-    Nuestras automatizaciones conectan tus sistemas, eliminan tareas repetitivas y te dan control total con trazabilidad.
-    Para que tu equipo pueda centrarse en lo que realmente importa.
+    Nuestras automatizaciones conectan tus sistemas, eliminan tareas repetitivas y mantienen total trazabilidad.
+    Para que tu equipo mantenga el control y pueda centrarse en lo que realmente importa.
   </p>
   <a
     href="#contacto"
