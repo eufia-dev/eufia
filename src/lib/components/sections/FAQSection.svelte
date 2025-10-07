@@ -12,5 +12,3 @@
   </header>
   <FaqAccordion items={faqs} />
 </section>
-
-

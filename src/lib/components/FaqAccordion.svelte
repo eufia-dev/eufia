@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { FaqItem } from '$lib/data/faqs';
+
   export let items: FaqItem[] = [];
 </script>
 
@@ -19,6 +20,4 @@
       </details>
     {/each}
   </div>
-  </div>
-
-
+</div>

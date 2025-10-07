@@ -5,7 +5,6 @@
   import ChatbotsSection from '$lib/components/sections/ChatbotsSection.svelte';
   import AutomationsSection from '$lib/components/sections/AutomationsSection.svelte';
   import BenefitsSection from '$lib/components/sections/BenefitsSection.svelte';
-  import CasesSection from '$lib/components/sections/CasesSection.svelte';
   import SectorsSection from '$lib/components/sections/SectorsSection.svelte';
   import AboutSection from '$lib/components/sections/AboutSection.svelte';
   import ContactSection from '$lib/components/sections/ContactSection.svelte';
@@ -142,8 +141,6 @@
 
 <AutomationsSection />
 
-<CasesSection />
-
 <SectorsSection />
 
 <BenefitsSection />
@@ -154,4 +151,3 @@
  
 <FAQSection />
  
-

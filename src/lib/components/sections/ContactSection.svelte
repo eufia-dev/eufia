@@ -18,7 +18,7 @@
 
 <section id="contacto" class="mx-4 mt-12 mb-8">
   <div class="max-w-md mx-auto">
-    <div class="bg-primary border border-default rounded-xl shadow-lg p-6">
+    <div class="bg-primary border border-default rounded-xl p-6">
       <h2 class="text-2xl font-semibold mb-6 text-center">Contacto</h2>
       <form class="space-y-4" method="POST" use:enhance={enhanceOptions}>
         <input
@@ -40,12 +40,11 @@
 
         <button
           type="submit" disabled={sending}
-          class="w-full py-3 px-6 font-semibold text-inverse rounded-lg shadow-lg
+          class="w-full py-3 px-6 font-semibold text-inverse rounded-lg
             flex items-center justify-center gap-2 transition-all duration-200
-            disabled:opacity-70 disabled:cursor-not-allowed border
-            hover:shadow-xl transform hover:-translate-y-0.5
-            hover:border-brand
-            {sent ? 'bg-green-600 hover:border-green-600' : 'bg-brand'}">
+            disabled:opacity-70 disabled:cursor-not-allowed
+            hover:scale-102
+            {sent ? 'bg-green-600' : 'bg-brand'}">
           {#if sending}
             <span class="w-5 h-5 border-2 border-inverse border-t-transparent rounded-full animate-spin"></span>
             Enviando…
@@ -65,5 +64,3 @@
     </div>
   </div>
 </section>
-
-

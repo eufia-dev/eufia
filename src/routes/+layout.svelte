@@ -69,7 +69,7 @@
               <span class="material-symbols-rounded transition-transform duration-200 group-hover:rotate-180">expand_more</span>
             </a>
             <div
-              class="absolute top-full left-0 mt-2 bg-primary border border-default rounded-md overflow-hidden
+              class="absolute top-full left-0 mt-2 bg-primary border border-default rounded-lg overflow-hidden
                 opacity-0 invisible max-h-0 group-hover:opacity-100 group-hover:visible group-hover:max-h-40
                 transition-all duration-250 z-50"
             >
@@ -108,7 +108,7 @@
             Conócenos
           </a>
           <a href="/#contacto"
-            class="rounded-md border border-default bg-brand text-inverse px-3 py-1.5 hover:border-brand transition-colors duration-200"
+            class="rounded-lg bg-brand text-inverse px-3 py-1.5 hover:scale-102 transition-transform duration-200"
           >
             Contacto
           </a>
@@ -226,8 +226,8 @@
         on:click={closeMobileMenu}
       >
         <span
-          class="relative z-10 inline-flex rounded-md border border-default bg-brand text-inverse
-            px-3 py-1.5 flex-none transition-[flex-grow,padding-right] duration-300 ease-in-out
+          class="relative z-10 inline-flex rounded-lg bg-brand text-inverse
+            px-4 py-2 flex-none transition-[flex-grow,padding-right] duration-300 ease-in-out
             group-hover:flex-grow group-hover:pr-12"
         >
           Contacto

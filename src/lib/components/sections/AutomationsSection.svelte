@@ -2,58 +2,61 @@
   import Automation from '$lib/components/Automation.svelte';
 </script>
 
-<section id="automatizaciones" class="max-w-7xl mx-auto px-6 md:px-16 mt-20 mb-8">
-  <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-    <Automation />
-    
-    <div class="flex-1 text-center lg:text-left">
-      <h3 class="text-3xl md:text-4xl font-semibold mb-4">Automatización de procesos</h3>
-      <p class="text-lg text-secondary mb-6 leading-relaxed">
-        Tareas que <span class="font-semibold text-primary">se hacen solas</span>, 
-        liberando a tu equipo del trabajo repetitivo. 
-        <span class="font-semibold text-primary">Tú mantienes el control</span>: decides qué, cómo y cuándo automatizar.
+<section
+  id="automatizaciones"
+  class="max-w-7xl mx-auto px-6 md:px-16 mt-20"
+>
+  <div class="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12">
+    <div class="text-center lg:text-left w-full">
+      <h3 class="text-4xl font-semibold">Automatización de <span class="text-brand">procesos</span></h3>
+      <p class="text-lg mt-6">
+        Tareas que se hacen solas, liberando a tu equipo del trabajo repetitivo. 
       </p>
       
-      <div class="space-y-2.5 mb-6">
-        <ul class="space-y-2.5 text-secondary">
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-rounded text-green-600 mt-0.5 flex-shrink-0">check_circle</span>
-            <span><strong>Gestión documental:</strong> Clasifica, archiva y concilia facturas automáticamente</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-rounded text-green-600 mt-0.5 flex-shrink-0">check_circle</span>
-            <span><strong>Sincronización:</strong> Pedidos, stock, clientes... todo actualizado entre sistemas</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-rounded text-green-600 mt-0.5 flex-shrink-0">check_circle</span>
-            <span><strong>Flujos inteligentes:</strong> Del email al sistema y la notificación sin tocar nada</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-rounded text-green-600 mt-0.5 flex-shrink-0">check_circle</span>
-            <span><strong>Informes automáticos:</strong> Resúmenes, alertas y reportes sin crearlos manualmente</span>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="space-y-2.5">
-        <div class="bg-green-50 rounded-xl p-4 border border-green-200">
-          <p class="text-sm text-secondary">
-            <span class="material-symbols-rounded text-green-600 align-middle !text-xl mr-1">shield</span>
-            <span class="font-semibold text-primary">Control total:</span> 
-            Notificaciones de cada acción, pausa/modifica cuando quieras, visibilidad completa.
-          </p>
-        </div>
-        
-        <div class="bg-secondary/50 rounded-xl p-4 border border-default">
-          <p class="text-sm text-secondary">
-            <span class="material-symbols-rounded text-green-600 align-middle !text-xl mr-1">lightbulb</span>
-            <span class="font-semibold text-primary">Fácil:</span> 
-            Se integra con tus herramientas actuales (Google, Microsoft, Shopify, HubSpot, Holded...).
-          </p>
-        </div>
-      </div>
+      <ul class="space-y-2.5 text-secondary mt-6">
+        <li class="flex items-center justify-center lg:justify-start gap-2">
+          <span class="material-symbols-rounded text-brand">check_circle</span>
+          <span>
+            <span class="font-semibold">Gestión documental</span>: Clasifica, archiva y concilia facturas automáticamente
+          </span>
+        </li>
+        <li class="flex items-center justify-center lg:justify-start gap-2">
+          <span class="material-symbols-rounded text-brand">check_circle</span>
+          <span>
+            <span class="font-semibold">Sincronización</span>: Pedidos, stock, clientes... todo actualizado entre sistemas
+          </span>
+        </li>
+        <li class="flex items-center justify-center lg:justify-start gap-2">
+          <span class="material-symbols-rounded text-brand">check_circle</span>
+          <span>
+            <span class="font-semibold">Flujos inteligentes</span>: Del email al sistema y la notificación sin tocar nada
+          </span>
+        </li>
+        <li class="flex items-center justify-center lg:justify-start gap-2">
+          <span class="material-symbols-rounded text-brand">check_circle</span>
+          <span>
+            <span class="font-semibold">Informes automáticos</span>: Resúmenes, alertas y reportes sin crearlos manualmente
+          </span>
+        </li>
+      </ul>
+
+      <span class="font-semibold text-primary">Tú mantienes el control</span>: decides qué, cómo y cuándo automatizar.
+    </div>
+
+    <div class="w-full self-stretch">
+      <Automation />
     </div>
   </div>
+  <p class="mt-10 lg:mt-12 text-lg">
+    Nuestras automatizaciones conectan tus sistemas, eliminan tareas repetitivas y te dan control total con trazabilidad.
+    Para que tu equipo pueda centrarse en lo que realmente importa.
+  </p>
+  <a
+    href="#contacto"
+    aria-label="Ir al formulario de contacto"
+    class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3 mt-10
+      hover:scale-102 transition-transform duration-200">
+    <span>Automatiza tus procesos</span>
+    <span class="material-symbols-rounded">arrow_forward</span>
+  </a>
 </section>
-
-

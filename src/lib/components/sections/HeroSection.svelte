@@ -26,7 +26,7 @@
     fullScreen: { enable: false },
     background: { color: { value: 'transparent' } },
     particles: {
-      number: { value: 80, density: { enable: true, area: 800 } },
+      number: { value: 100, density: { enable: true, area: 800 } },
       color: { value: ['#F05F00', '#FF7A1A', '#FF6B00'] },
       links: { enable: true, color: '#F05F00', opacity: 0.6, distance: 200, width: 1.5 },
       move: { enable: true, speed: 0.6, direction: 'none', outModes: { default: 'out' } },
@@ -83,13 +83,11 @@
       <a
         href="#contacto"
         aria-label="Ir al formulario de contacto"
-        class="inline-flex items-center gap-2 rounded-md border bg-brand text-inverse px-6 py-3
-          hover:border-brand hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200">
+        class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3 mt-10
+          hover:scale-102 transition-transform duration-200">
         <span>Descubre el potencial de la IA</span>
         <span class="material-symbols-rounded">arrow_forward</span>
       </a>
     </div>
   </div>
 </section>
-
-

@@ -1,5 +1,28 @@
 <script lang="ts">
-  import IntegrationsMarquee from '$lib/components/sections/IntegrationsMarquee.svelte';
+  import IntegrationsMarquee from '$lib/components/IntegrationsMarquee.svelte';
+  import FeatureCard from '$lib/components/FeatureCard.svelte';
+  
+  const solutions = [
+    {
+      href: '#agentes-ia',
+      icon: 'smart_toy',
+      title: 'Agentes a medida',
+      description: 'Asistentes que trabajan con tus herramientas.'
+    },
+    {
+      href: '#chatbots',
+      icon: 'chat_bubble',
+      title: 'Chatbots inteligentes',
+      description: 'Responde 24/7 con tu propio conocimiento.'
+    },
+    {
+      href: '#automatizaciones',
+      icon: 'settings_suggest',
+      title: 'Automatización de procesos',
+      description: 'Facturas, documentos, correos… sin esfuerzo.'
+    }
+  ];
+  
 </script>
 
 <section id="soluciones" class="max-w-7xl mx-auto mt-8 px-8 md:px-16">
@@ -7,56 +30,25 @@
     <h2 class="text-4xl font-semibold">
       <span class="text-brand">IA</span> práctica para empresas
     </h2>
-    <h3 class="mt-8 mx-auto text-xl">
+    <h3 class="mt-8 mx-auto text-lg">
       Soluciones que se adaptan a tu negocio. Tecnología líder y fácil de usar que mejora tu productividad cada día.
     </h3>
   </header>
 
   <div class="grid gap-6 md:grid-cols-3 mt-10">
-    <a
-      href="#agentes-ia"
-      class="group rounded-2xl border-2 border-default bg-primary p-6 block transition-all duration-200
-        hover:border-brand hover:-translate-y-0.5 hover:shadow-lg">
-      <div class="mb-3 text-brand">
-        <span class="material-symbols-rounded !text-4xl align-middle transition-transform duration-200 group-hover:scale-110">smart_toy</span>
-      </div>
-      <h2 class="text-lg font-semibold mb-1">Agentes a medida</h2>
-      <p class="text-secondary">Asistentes que trabajan con tus herramientas.</p>
-    </a>
-
-    <a
-      href="#chatbots"
-      class="group rounded-2xl border-2 border-default bg-primary p-6 block transition-all duration-200
-        hover:border-brand hover:-translate-y-0.5 hover:shadow-lg">
-      <div class="mb-3 text-brand">
-        <span class="material-symbols-rounded !text-4xl align-middle transition-transform duration-200 group-hover:scale-110">chat_bubble</span>
-      </div>
-      <h2 class="text-lg font-semibold mb-1">Chatbots inteligentes</h2>
-      <p class="text-secondary">Responde 24/7 con tu propio conocimiento.</p>
-    </a>
-
-    <a
-      href="#automatizaciones"
-      class="group rounded-2xl border-2 border-default bg-primary p-6 block transition-all duration-200
-        hover:border-brand hover:-translate-y-0.5 hover:shadow-lg">
-      <div class="mb-3 text-brand">
-        <span class="material-symbols-rounded !text-4xl align-middle transition-transform duration-200 group-hover:scale-110">settings_suggest</span>
-      </div>
-      <h2 class="text-lg font-semibold mb-1">Automatización de procesos</h2>
-      <p class="text-secondary">Facturas, documentos, correos… sin esfuerzo.</p>
-    </a>
+    {#each solutions as s}
+      <FeatureCard href={s.href} icon={s.icon} title={s.title} description={s.description} />
+    {/each}
   </div>
 
-  <div class="mt-10 text-center">
+  <div class="mt-12 text-center">
     <h3 class="text-2xl font-semibold">
       Integración con tus herramientas de trabajo
     </h3>
-    <p class="max-auto mt-4">
+    <p class="text-lg mx-auto mt-4">
       Tus procesos de siempre potenciados con Inteligencia Artificial. Para que trabajes como siempre, pero más rápido.
     </p>
   </div>
 
   <IntegrationsMarquee />
 </section>
-
-
