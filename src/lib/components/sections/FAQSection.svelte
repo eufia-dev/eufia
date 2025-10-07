@@ -1,9 +1,6 @@
 <script lang="ts">
-  import FaqJsonLd from '$lib/seo/FaqJsonLd.svelte';
   import { faqs } from '$lib/data/faqs';
 </script>
-
-<FaqJsonLd items={faqs} />
 
 <section class="max-w-7xl mx-auto px-8 md:px-16">
   <header class="text-center mb-10">
