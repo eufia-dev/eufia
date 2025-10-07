@@ -28,7 +28,7 @@
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
-            <span class="font-semibold">Agenda citas o reuniones</span> y envia recordatorios
+            <span class="font-semibold">Agenda citas o reuniones</span> y envía recordatorios
           </span>
         </li>
         <li class="flex items-center justify-center lg:justify-start gap-2">
@@ -47,7 +47,7 @@
 
   <p class="mt-10 lg:mt-12 text-lg">
     Nuestros chatbots no solo resuelven dudas a clientes, mejoran la productividad de tus equipos.
-    Información al instante, actualizada, y con capacidad de que le realizar acciones conectado a nuestos Agentes IA.
+    Información al instante, actualizada, y con capacidad de realizar acciones conectado a nuestros Agentes IA.
   </p>
   
   <a

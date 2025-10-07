@@ -9,10 +9,11 @@
     <meta name="robots" content="max-image-preview:large" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@300&display=swap"
       rel="stylesheet"
-    />    
+    />
 
     <script type="application/ld+json">
       {
@@ -23,11 +24,6 @@
         "url": "https://www.eufia.eu/",
         "inLanguage": "es-ES",
         "publisher": { "@id": "https://www.eufia.eu/#organization" },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.eufia.eu/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
       }
     </script>
 
@@ -56,6 +52,11 @@
           "addressLocality": "Mallorca",
           "addressRegion": "Islas Baleares",
           "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.5696,
+          "longitude": 2.6502
         },
         "areaServed": [
           { "@type": "Place", "name": "Mallorca" },
@@ -153,6 +154,28 @@
         }
       ]
     }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Miquel Llaneras",
+            "jobTitle": "Co-fundador, Ingeniero de Telecomunicaciones especializado en IA",
+            "sameAs": ["https://www.linkedin.com/in/miquellaneras"],
+            "worksFor": { "@id": "https://www.eufia.eu/#organization" }
+          },
+          {
+            "@type": "Person",
+            "name": "Rafa Nadal Barceló",
+            "jobTitle": "Co-fundador, Abogado y ADE",
+            "sameAs": ["https://www.linkedin.com/in/rafanadalbarcelo"],
+            "worksFor": { "@id": "https://www.eufia.eu/#organization" }
+          }
+        ]
+      }
     </script>
     
     %sveltekit.head%

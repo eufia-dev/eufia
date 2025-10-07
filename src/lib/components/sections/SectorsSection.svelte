@@ -23,7 +23,7 @@
     {
       icon: 'computer',
       title: 'Profesionales y Despachos',
-      subtitle: 'Gestorías, abogados, inenieros',
+      subtitle: 'Gestorías, abogados, ingenieros',
       description: '- Facturación y contabilidad automáticas\n- Asistente virtual para consultas y gestión de tareas'
     },
   ];
