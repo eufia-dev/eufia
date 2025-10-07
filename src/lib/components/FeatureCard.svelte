@@ -29,14 +29,14 @@
       </span>
       <span
         class="material-symbols-rounded !text-2xl text-secondary self-start
-          group-hover:scale-110 transition-transform duration-200"
+          group-hover:text-primary group-hover:scale-110 transition-all duration-200"
       >
         arrow_forward
       </span>
     </div>
     <h3 class="text-lg font-semibold mt-3">{title}</h3>
     {#if subtitle}
-      <p class="mt-2 text-secondary">{subtitle}</p>
+      <p class="mt-2 text-secondary font-semibold">{subtitle}</p>
     {/if}
     {#if description}
       <p class="mt-2 text-secondary whitespace-pre-line">{description}</p>
@@ -47,11 +47,11 @@
     class="group rounded-xl bg-primary p-6 block"
   >
     <div class="text-brand">
-      <span class="material-symbols-rounded !text-4xl align-middle">{icon}</span>
+      <span class="material-symbols-rounded !text-4xl">{icon}</span>
     </div>
     <h3 class="text-lg font-semibold mt-3">{title}</h3>
     {#if subtitle}
-      <p class="mt-2 text-secondary">{subtitle}</p>
+      <p class="mt-2 text-secondary font-semibold">{subtitle}</p>
     {/if}
     {#if description}
       <p class="mt-2 text-secondary whitespace-pre-line">{description}</p>

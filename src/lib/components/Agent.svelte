@@ -60,8 +60,8 @@
   <div class="mx-auto w-full mt-2 lg:mt-4 flex flex-col sm:flex-row justify-center items-center">
     <div
       class="flex items-center justify-center size-14 p-2 bg-primary
-        border-2 border-default rounded-lg transition-all duration-400"
-      class:border-brand={step == 1}
+        border-2  rounded-lg transition-all duration-400
+        {step == 1 ? 'border-brand' : 'border-default'}"
     >
       <img src="/integrations/gmail.png" alt="Gmail" class="w-10" />
     </div>
@@ -74,7 +74,8 @@
 
     <div
       class="flex items-center justify-center size-14 p-2 bg-primary
-        border-2 border-default rounded-lg opacity-0 transition-all duration-400 ease-in"
+        border-2 rounded-lg opacity-0 transition-all duration-400 ease-in
+        {step == 2 ? 'border-brand' : 'border-default'}"
       class:border-brand={step == 2}
       class:opacity-100={step >= 2}
     >
@@ -89,7 +90,8 @@
 
     <div
       class="flex items-center justify-center size-14 p-2 bg-primary
-        border-2 border-default rounded-lg opacity-0 transition-all duration-400 ease-in"
+        border-2 rounded-lg opacity-0 transition-all duration-400 ease-in
+        {step == 3 ? 'border-brand' : 'border-default'}"
       class:border-brand={step == 3}
       class:opacity-100={step >= 3}
     >
@@ -104,7 +106,8 @@
 
     <div
       class="flex items-center justify-center size-14 p-2 bg-primary
-        border-2 border-default rounded-lg opacity-0 transition-all duration-400 ease-in"
+        border-2 rounded-lg opacity-0 transition-all duration-400 ease-in
+        {step == 4 ? 'border-brand' : 'border-default'}"
       class:border-brand={step == 4}
       class:opacity-100={step >= 4}
     >
@@ -119,7 +122,8 @@
 
     <div
       class="flex items-center justify-center size-14 p-2 bg-primary
-        border-2 border-default rounded-lg opacity-0 transition-all duration-400 ease-in"
+        border-2 rounded-lg opacity-0 transition-all duration-400 ease-in
+        {step == 5 ? 'border-brand' : 'border-default'}"
       class:border-brand={step == 5}
       class:opacity-100={step >= 5}
     >

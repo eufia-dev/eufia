@@ -131,23 +131,25 @@
   </script>
 </svelte:head>
 
-<HeroSection />
-
-<SolutionsSection />
-
-<AgentsSection />
-
-<ChatbotsSection />
-
-<AutomationsSection />
-
-<SectorsSection />
-
-<BenefitsSection />
-
-<AboutSection />
-
-<ContactSection />
- 
-<FAQSection />
+<div class="space-y-24 md:space-y-30 2xl:space-y-40 mb-10">
+  <HeroSection />
+  
+  <SolutionsSection />
+  
+  <AgentsSection />
+  
+  <ChatbotsSection />
+  
+  <AutomationsSection />
+  
+  <SectorsSection />
+  
+  <BenefitsSection />
+  
+  <AboutSection />
+  
+  <ContactSection />
+   
+  <FAQSection />
+</div>
  

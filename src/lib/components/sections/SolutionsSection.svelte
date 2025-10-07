@@ -28,7 +28,7 @@
 <section id="soluciones" class="max-w-7xl mx-auto mt-8 px-8 md:px-16">
   <header class="text-center">
     <h2 class="text-4xl font-semibold">
-      <span class="text-brand">IA</span> práctica para empresas
+      IA práctica para <span class="text-brand">empresas</span>
     </h2>
     <h3 class="mt-8 mx-auto text-lg">
       Soluciones que se adaptan a tu negocio. Tecnología líder y fácil de usar que mejora tu productividad cada día.

@@ -1,105 +1,124 @@
-<section id="conocenos" class="max-w-7xl mx-auto px-6 md:px-16 mt-20">
-  <header class="text-center mb-14">
-    <h2 class="sr-only">Conócenos</h2>
-    <p class="text-3xl md:text-4xl font-semibold">
-      Elevamos la inteligencia natural con la potencia de la artificial.
-    </p>
-    <p class="mt-4 text-lg md:text-xl text-secondary max-w-3xl mx-auto">
-      En EUFIA diseñamos e integramos agentes, chatbots y automatizaciones con enfoque humano: claros de entender,
-      seguros por diseño y medibles en resultados.
+<section id="conocenos" class="max-w-7xl mx-auto px-8 md:px-16">
+  <header class="text-center">
+    <h2 class="text-4xl font-semibold">
+      Sobre <span class="text-brand">nosotros</span>
+    </h2>
+    <p class="text-xl mt-8">
+      Potenciando la
+      <span class="font-semibold">inteligencia natural</span>
+      con el poder de la
+      <span class="font-semibold">artificial</span>.
     </p>
   </header>
 
-  <div class="mt-6 grid gap-12">
-    <section aria-labelledby="historia-title" class="grid gap-6 md:grid-cols-5 items-start">
-      <div class="md:col-span-2">
-        <h3 id="historia-title" class="text-2xl font-semibold">Nuestra historia</h3>
+  <div class="mt-12 grid gap-12 text-lg">
+    <section aria-labelledby="historia-title" class="grid gap-6 md:grid-cols-12 items-start">
+      <div class="md:col-span-3 lg:col-span-2">
+        <h3 id="historia-title" class="text-2xl font-semibold">Historia</h3>
       </div>
-      <div class="md:col-span-3">
+      <div class="md:col-span-9 lg:col-span-10">
         <div class="pl-4 border-l-2 border-default">
-          <p class="text-secondary">
-            Nuestro nombre nace del griego antiguo <span class="italic">εὐφυΐα</span> (euphyía): “inteligencia natural”.
-            Creemos que la mejor IA es la que eleva el talento de las personas. Por eso fundamos EUFIA: para llevar
-            soluciones de IA a las empresas de forma sencilla, segura y comprensible, creando valor real desde el primer día.
+          <p class="">
+            Nuestro nombre se inspira <span class="italic">εὐφυΐα</span> (euphyía),
+            palabra del griego antiguo y que significa "<span class="font-semibold">inteligencia natural</span>".
+            <br/>
+            <br/>
+            <span class="font-semibold">EUFIA</span> nace precisamente de esa idea:
+            elevar el talento natural de las personas con la
+            <span class="font-semibold">potencia transformadora</span>
+            de la <span class="font-semibold">Inteligencia Artificial</span>.
           </p>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="valores-title">
-      <h3 id="valores-title" class="text-2xl font-semibold text-center">Nuestros valores</h3>
-      <div class="grid gap-4 md:gap-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
-        <div class="rounded-2xl border-2 border-default bg-primary p-5">
-          <div class="text-3xl">✅</div>
-          <h4 class="mt-3 font-semibold">Resultados reales</h4>
-          <p class="text-secondary">Impacto medible desde el primer mes.</p>
-        </div>
-        <div class="rounded-2xl border-2 border-default bg-primary p-5">
-          <div class="text-3xl">🤝</div>
-          <h4 class="mt-3 font-semibold">Co-diseño con tu equipo</h4>
-          <p class="text-secondary">Trabajamos contigo, no solo para ti.</p>
-        </div>
-        <div class="rounded-2xl border-2 border-default bg-primary p-5">
-          <div class="text-3xl">🔒</div>
-          <h4 class="mt-3 font-semibold">Seguridad y privacidad</h4>
-          <p class="text-secondary">RGPD por defecto, datos bajo tu control.</p>
-        </div>
-        <div class="rounded-2xl border-2 border-default bg-primary p-5">
-          <div class="text-3xl">⚙️</div>
-          <h4 class="mt-3 font-semibold">Integración transparente</h4>
-          <p class="text-secondary">Nada de cajas negras, solo IA comprensible.</p>
-        </div>
+    <section aria-labelledby="vision-title" class="grid gap-6 md:grid-cols-12 items-start">
+      <div class="md:col-span-3 lg:col-span-2">
+        <h3 id="vision-title" class="text-2xl font-semibold">Visión</h3>
       </div>
-      <p class="mt-6 text-center text-secondary">Nuestra promesa: convertir la IA en una herramienta humana.</p>
-    </section>
-
-    <section aria-labelledby="equipo-title" class="mt-4">
-      <h3 id="equipo-title" class="text-2xl font-semibold text-center mb-6">Nuestro equipo</h3>
-      <p class="text-center text-secondary max-w-3xl mx-auto mb-8">
-        Detrás de EUFIA hay un equipo que une visión tecnológica y estratégica.
-      </p>
-      <div class="grid md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-default">
-        <article class="py-4 first:pt-0 last:pb-0">
-          <div class="w-full">
-            <h4 class="text-xl font-semibold">Miquel Llaneras</h4>
-            <p class="text-secondary mt-1">Ingeniero de Telecomunicaciones especializado en IA.</p>
-            <p class="text-secondary mt-2">Experiencia en desarrollo de software y consultoría.</p>
-            <div class="mt-3">
-              <a href="https://www.linkedin.com/in/miquellaneras" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-4 py-2 hover:opacity-90 transition-opacity">
-                <span class="material-symbols-rounded">link</span>
-                LinkedIn
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="py-4 first:pt-0 last:pb-0">
-          <div class="w-full">
-            <h4 class="text-xl font-semibold">Rafa Nadal</h4>
-            <p class="text-secondary mt-1">Abogado graduado en ADE y Derecho.</p>
-            <p class="text-secondary mt-2">Experiencia en abogacía y consultoría financiera.</p>
-            <div class="mt-3">
-              <a href="https://www.linkedin.com/in/rafanadalbarcelo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-4 py-2 hover:opacity-90 transition-opacity">
-                <span class="material-symbols-rounded">link</span>
-                LinkedIn
-              </a>
-            </div>
-          </div>
-        </article>
+      <div class="md:col-span-9 lg:col-span-10">
+        <div class="pl-4 border-l-2 border-default">
+          <p class="">
+            Queremos que cualquier empresa pueda beneficiarse de la Inteligencia Artificial de forma sencilla,
+            segura y comprensible, creando valor real desde el primer día.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section aria-labelledby="cta-title" class="mt-2 text-center">
-      <h3 id="cta-title" class="text-2xl md:text-3xl font-semibold">
-        Hazlo <span class="font-semibold">fácil</span>. Hazlo con <span class="font-semibold text-brand">IA.</span>
-      </h3>
-      <p class="mt-4 text-lg text-secondary max-w-3xl mx-auto">
-        Descubre cómo EUFIA puede ayudarte a transformar tus procesos con inteligencia artificial.
-      </p>
-      <div class="mt-6">
-        <a href="#contacto" class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3 hover:opacity-90 transition-opacity">
-          <span>Contáctanos</span>
-          <span class="material-symbols-rounded">arrow_forward</span>
-        </a>
+    <section aria-labelledby="valores-title" class="grid gap-6 md:grid-cols-12 items-start">
+      <div class="md:col-span-3 lg:col-span-2">
+        <h3 id="valores-title" class="text-2xl font-semibold">Valores</h3>
+      </div>
+      <div class="md:col-span-9 lg:col-span-10">
+        <div class="pl-4 border-l-2 border-default">
+          <ul class="space-y-4">
+            <li>
+              <span class="font-semibold">Centrados en rendimiento</span>
+              <br/>
+              <span>Nos enfocamos en resultados concretos y medibles,
+                creando inteligencia artificial con valor e impacto real en el negocio.</span>
+            </li>
+            <li>
+              <span class="font-semibold">IA al servicio de las personas</span>
+              <br/>
+              <span>Tecnología que se adapta a las personas y potencia su talento,
+                con agentes que se integran en tus procesos y equipos para multiplicar su productividad.</span>
+            </li>
+            <li>
+              <span class="font-semibold">Experiencias naturales</span>
+              <br/>
+              <span>Convertimos la complejidad de la inteligencia artificial en experiencias intuitivas,
+                fluidas y agradables, donde la innovación se siente sencilla y cercana.</span>
+            </li>
+            <li>
+              <span class="font-semibold">Seguridad sin compromisos</span>
+              <br/>
+              <span>Con la privacidad y la transparencia por encima de todo,
+                garantizamos la seguridad de tus datos y los de tus clientes.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="fundadores-title" class="grid gap-6 md:grid-cols-12 items-start">
+      <div class="md:col-span-3 lg:col-span-2">
+        <h3 id="fundadores-title" class="text-2xl font-semibold">Fundadores</h3>
+      </div>
+      <div class="md:col-span-9 lg:col-span-10">
+        <div class="pl-4 border-l-2 border-default space-y-6">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/miquellaneras"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Miquel Llaneras LinkedIn"
+              class="inline-flex items-center gap-2 hover:text-brand transition-colors duration-200">
+              <span class="font-semibold text-xl">Miquel Llaneras — </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <p class="my-1">Ingeniero de Telecomunicaciones especializado en Inteligencia Artificial</p>
+            <p>Experiencia en desarrollo de software y consultoría.</p>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/rafanadalbarcelo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Rafa Nadal LinkedIn"
+              class="inline-flex items-center gap-2 hover:text-brand transition-colors duration-200">
+              <span class="font-semibold text-xl">Rafa Nadal — </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <p class="my-1">Abogado graduado en ADE y Derecho</p>
+            <p>Experiencia en abogacía y consultoría financiera.</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>

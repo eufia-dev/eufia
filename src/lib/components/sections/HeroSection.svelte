@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tick, onMount } from 'svelte';
+  import { onMount } from 'svelte';
   import Particles, { particlesInit } from '@tsparticles/svelte';
   import { loadSlim } from '@tsparticles/slim';
 
@@ -52,9 +52,10 @@
   </div>
   <div
     aria-hidden="true"
-    class="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-b from-transparent via-stone-50/70 to-stone-50 z-5"
+    class="pointer-events-none absolute inset-x-0 bottom-0 h-14
+      bg-gradient-to-b from-transparent via-stone-50/70 to-stone-50 z-5"
   ></div>
-  <div class="relative z-10 max-w-7xl mx-auto p-8 md:p-16">
+  <div class="relative z-10 max-w-7xl mx-auto p-8 md:p-16 -mb-4 md:-mb-8">
     <div class="flex flex-col lg:flex-row items-center gap-6">
       <div class="flex-1 text-center lg:text-left">
         <h1 class="sr-only">Consultoría de Inteligencia Artificial en Mallorca y Baleares</h1>

@@ -5,7 +5,7 @@
     {
       icon: 'trending_up',
       title: 'Más productividad',
-      description: 'Reduce tareas manuales y tiempos de respuesta. Libera horas del equipo.'
+      description: 'Reduce tareas manuales y libera horas al equipo.'
     },
     {
       icon: 'checklist',
@@ -14,34 +14,35 @@
     },
     {
       icon: 'schedule',
-      title: '24/7 y más rápido',
-      description: 'Atiende clientes y ejecuta tareas en cualquier momento, sin esperas.'
+      title: '24/7 y automático',
+      description: 'Atiende al instante y sin ocupar tiempo del equipo.'
     },
     {
       icon: 'handshake',
-      title: 'Se integra con tus herramientas',
-      description: 'Google, Microsoft, Shopify, HubSpot, ERPs, CRMs… trabajamos donde tú trabajas.'
+      title: 'Integrado con tus herramientas',
+      description: 'Google, Microsoft, ERPs, CRMs… trabajamos cómo tú trabajas.'
     },
     {
       icon: 'lock',
-      title: 'Seguridad y RGPD',
-      description:'Datos minimizados, cifrados y con control de accesos. Alojamiento en la UE cuando se requiere.'
+      title: 'Seguridad por delante',
+      description:'RGPD, privacidad de la nube y control de accesos.'
     },
     {
       icon: 'monitoring',
       title: 'Resultados medibles',
-      description: 'Paneles e informes que muestran ahorro de tiempo y el impacto en el negocio.'
+      description: 'Paneles e informes con ahorro y impacto en el negocio.'
     },
   ];
 </script>
 
-<section id="beneficios" class="max-w-7xl mx-auto px-6 md:px-16 mt-20">
+<section id="beneficios" class="max-w-7xl mx-auto px-8 md:px-16">
   <header class="text-center">
-    <h3 class="text-3xl md:text-4xl font-semibold">Beneficios de trabajar con IA</h3>
-    <p class="mt-4 text-lg text-secondary max-w-3xl mx-auto">
-      Resultados medibles desde las primeras semanas. Proyectos rápidos, integrados con tus sistemas y con control total.
+    <h2 class="text-4xl font-semibold">
+      Trabaja con <span class="text-brand">beneficios</span>
+    </h2>
+    <p class="mt-8 text-lg mx-auto">
+      Impulsados por IA, enfocados en resultados. Creamos soluciones que aportan valor y tienen retorno real.
     </p>
-    <p class="mt-4 mx-auto text-lg text-secondary">Impulsadas por IA, enfocadas en resultados.</p>
   </header>
 
   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10">
@@ -50,10 +51,15 @@
     {/each}
   </div>
 
-  <div class="mt-8 text-center">
-    <a href="#contacto" class="inline-flex items-center gap-2 rounded-xl bg-brand text-white px-5 py-3 font-medium hover:opacity-90 transition-opacity">
-      <span class="material-symbols-rounded align-middle">rocket_launch</span>
-      Empezar con un piloto
-    </a>
-  </div>
+  <p class="mx-auto mt-10 text-lg">
+    Hacemos que la inteligencia artificial trabaje por ti, para que tu equipo pueda centrarse en crear valor y crecer.
+  </p>
+  <a
+    href="#contacto"
+    aria-label="Solicitar estudio gratuito de IA en Mallorca"
+    class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3 mt-10
+      hover:scale-102 transition-transform duration-200">
+    <span>Crecer con IA</span>
+    <span class="material-symbols-rounded">arrow_forward</span>
+  </a>
 </section>

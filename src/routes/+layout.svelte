@@ -108,7 +108,7 @@
             Conócenos
           </a>
           <a href="/#contacto"
-            class="rounded-lg bg-brand text-inverse px-3 py-1.5 hover:scale-102 transition-transform duration-200"
+            class="rounded-lg bg-brand text-inverse px-4 py-2 hover:scale-102 transition-transform duration-200"
           >
             Contacto
           </a>

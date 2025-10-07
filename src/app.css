@@ -21,44 +21,43 @@
   }
 }
 
-@layer components {
-  .text-primary {
-    @apply text-stone-800;
-  }
 
-  .text-secondary {
-    @apply text-stone-600;
-  }
+@utility text-primary {
+  @apply text-stone-800;
+}
 
-  .bg-default {
-    @apply bg-stone-50;
-  }
+@utility text-secondary {
+  @apply text-stone-500;
+}
 
-  .bg-primary {
-    @apply bg-white;
-  }
+@utility bg-default {
+  @apply bg-stone-50;
+}
 
-  .bg-secondary {
-    @apply bg-stone-100;
-  }
+@utility bg-primary {
+  @apply bg-white;
+}
 
-  .bg-border {
-    @apply bg-stone-200;
-  }
+@utility bg-secondary {
+  @apply bg-stone-100;
+}
 
-  .border-default {
-    @apply border-stone-200;
-  }
+@utility bg-border {
+  @apply bg-stone-200;
+}
 
-  .border-strong {
-    @apply border-stone-400;
-  }
+@utility border-default {
+  @apply border-stone-200;
+}
 
-  .ring-default {
-    @apply ring-stone-400;
-  }
+@utility border-strong {
+  @apply border-stone-400;
+}
 
-  .divide-default {
-    @apply divide-stone-200;
-  }
+@utility ring-default {
+  @apply ring-stone-400;
+}
+
+@utility divide-default {
+  @apply divide-stone-200;
 }

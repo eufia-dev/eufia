@@ -4,7 +4,7 @@
 
 <section
   id="agentes-ia"
-  class="max-w-7xl mx-auto px-6 md:px-16 mt-20"
+  class="max-w-7xl mx-auto px-8 md:px-16"
 >
   <div class="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12">
     <div class="text-center lg:text-left w-full">
@@ -15,7 +15,7 @@
         Asistentes digitales que ejecutan tareas completas de forma autónoma. 
       </p>
       
-      <ul class="space-y-2.5 text-secondary mt-6">
+      <ul class="space-y-2.5 mt-6">
         <li class="flex items-center justify-center lg:justify-start gap-2">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
