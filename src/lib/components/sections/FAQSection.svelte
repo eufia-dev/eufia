@@ -1,5 +1,34 @@
 <script lang="ts">
   import { faqs } from '$lib/data/faqs';
+  import { slide } from 'svelte/transition';
+  
+  let openIndex: number | null = null;
+  let visibleIndex: number | null = null;
+  let closing: number[] = [];
+
+  function keepOpen(i: number) {
+    if (!closing.includes(i)) {
+      closing = [...closing, i];
+    }
+  }
+
+  function doneClosing(i: number) {
+    if (closing.includes(i)) {
+      closing = closing.filter((x) => x !== i);
+    }
+  }
+
+  function toggle(index: number) {
+    if (openIndex === index) {
+      keepOpen(index);
+      visibleIndex = null;
+      openIndex = null;
+    } else {
+      if (visibleIndex !== null) keepOpen(visibleIndex);
+      openIndex = index;
+      visibleIndex = index;
+    }
+  }
 </script>
 
 <section class="max-w-7xl mx-auto px-8 md:px-16">
@@ -8,21 +37,27 @@
   </header>
   <div class="mx-auto rounded-2xl overflow-hidden">
     <div class="divide-y divide-default">
-      {#each faqs as faq}
-        <details class="group p-6">
-          <summary class="flex items-center justify-between cursor-pointer list-none">
+      {#each faqs as faq, i (faq.q)}
+        <details class="group p-6" open={openIndex === i || closing.includes(i)}>
+          <summary class="flex items-center justify-between cursor-pointer list-none" on:click|preventDefault={() => toggle(i)}>
             <span class="text-base md:text-lg font-medium text-primary">{faq.q}</span>
             <span
-              class="material-symbols-rounded transition-all group-hover:scale-110 duration-300 group-open:rotate-180"
+              class="material-symbols-rounded transition-transform group-hover:scale-110
+                {visibleIndex === i ? 'rotate-180 duration-250' : 'rotate-0 duration-200'}"
             >
               expand_more
             </span>
           </summary>
-          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-open:grid-rows-[1fr]">
-            <div class="overflow-hidden">
-              <p class="mt-3">{@html faq.a}</p>
+          {#if visibleIndex === i}
+            <div
+              class="mt-3"
+              in:slide={{ duration: 250 }}
+              out:slide={{ duration: 200 }}
+              on:outroend={() => doneClosing(i)}
+            >
+              <p>{@html faq.a}</p>
             </div>
-          </div>
+          {/if}
         </details>
       {/each}
     </div>
