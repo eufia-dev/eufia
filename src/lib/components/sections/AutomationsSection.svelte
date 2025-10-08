@@ -41,7 +41,7 @@
       </ul>
     </div>
 
-    <div class="w-full h-69 self-stretch">
+    <div class="w-full md:h-69 self-stretch">
       <Automation />
     </div>
   </div>
