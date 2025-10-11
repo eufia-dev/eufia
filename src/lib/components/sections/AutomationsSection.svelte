@@ -7,32 +7,32 @@
   class="max-w-7xl mx-auto px-8 md:px-16"
 >
   <div class="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12">
-    <div class="text-center lg:text-left w-full">
+    <div class="text-left sm:text-center lg:text-left w-full">
       <h3 class="text-4xl font-semibold">Automatización de <span class="text-brand">procesos</span></h3>
       <p class="text-lg mt-6">
         Procesos repetitivos totalmente automatizados, liberando tiempo al equipo.
       </p>
       
       <ul class="space-y-2.5 mt-6">
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Contabilidad</span> y conciliación bancaria
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Informes automáticos</span> y sin esfuerzo
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Proyectos</span> y contratos agilizados
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Sincronización</span> y flujos entre aplicaciones

@@ -4,7 +4,7 @@
 
 <section id="chatbots" class="max-w-7xl mx-auto px-8 md:px-16">
   <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
-    <div class="text-center lg:text-left w-full">
+    <div class="text-left sm:text-center lg:text-left w-full">
       <h3 class="text-4xl font-semibold">
         Chatbots <span class="text-brand">profesionales</span>
       </h3>
@@ -13,25 +13,25 @@
       </p>
       
       <ul class="space-y-2.5 mt-6">
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Respuestas inmediatas</span> y en cualquier idioma
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Con tus carpetas, documentos</span> y bases de datos
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Agenda citas o reuniones</span> y envía recordatorios
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">WhatsApp, Instagram, web</span> y donde lo necesites

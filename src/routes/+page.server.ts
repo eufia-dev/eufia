@@ -8,8 +8,20 @@ export const actions: Actions = {
   default: (async ({ request }) => {
     const data = await request.formData();
 
+    const company = data.get('company');
+    if (typeof company === 'string' && company.trim() !== '') {
+      await new Promise((r) => setTimeout(r, 400));
+      return { success: true };
+    }
+
     const website = data.get('website');
     if (typeof website === 'string' && website.trim() !== '') {
+      await new Promise((r) => setTimeout(r, 400));
+      return { success: true };
+    }
+
+    const information = data.get('information');
+    if (typeof information === 'string' && information.trim() !== '') {
       await new Promise((r) => setTimeout(r, 400));
       return { success: true };
     }

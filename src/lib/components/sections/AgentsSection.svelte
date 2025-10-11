@@ -7,7 +7,7 @@
   class="max-w-7xl mx-auto px-8 md:px-16"
 >
   <div class="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12">
-    <div class="text-center lg:text-left w-full">
+    <div class="text-left sm:text-center lg:text-left w-full">
       <h3 class="text-4xl font-semibold">
         Agentes IA <span class="text-brand">personalizados</span>
       </h3>
@@ -16,26 +16,26 @@
       </p>
       
       <ul class="space-y-2.5 mt-6">
-        <li class="flex items-center justify-center lg:justify-start gap-2">
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
           <span class="material-symbols-rounded text-brand">check_circle</span>
           <span>
             <span class="font-semibold">Procesa facturas</span> y actualiza tu ERP/CRM
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
-          <span class="material-symbols-rounded text-brand mt-0.5 flex-shrink-0">check_circle</span>
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
+          <span class="material-symbols-rounded text-brand flex-shrink-0">check_circle</span>
           <span>
             <span class="font-semibold">Gestiona pedidos</span> y repone el stock
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
-          <span class="material-symbols-rounded text-brand mt-0.5 flex-shrink-0">check_circle</span>
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
+          <span class="material-symbols-rounded text-brand flex-shrink-0">check_circle</span>
           <span>
             <span class="font-semibold">Crea documentación</span> y redacta informes
           </span>
         </li>
-        <li class="flex items-center justify-center lg:justify-start gap-2">
-          <span class="material-symbols-rounded text-brand mt-0.5 flex-shrink-0">check_circle</span>
+        <li class="flex items-center justify-start sm:justify-center lg:justify-start gap-3">
+          <span class="material-symbols-rounded text-brand flex-shrink-0">check_circle</span>
           <span>
             <span class="font-semibold">Prepara presupuestos</span> y ventas
           </span>
