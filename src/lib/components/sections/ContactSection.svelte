@@ -60,24 +60,22 @@
             class="w-full px-4 py-3 bg-secondary rounded-lg
               focus:outline-none focus:ring-2 ring-default transition-all duration-200" />
 
-          <div style="sr-only">
-            <span class="sr-only">Empresa</span>
-            <input type="text" name="company" id="company" placeholder="Tu empresa" tabindex="-1" autocomplete="off" />
-            <label for="website">Sitio web</label>
-            <input type="text" name="website" id="website" placeholder="Tu sitio web" tabindex="-1" autocomplete="off" />
-          </div>
+          <span class="sr-only">Empresa</span>
+          <input class="sr-only" type="text" name="company" id="company" placeholder="Tu empresa" tabindex="-1" autocomplete="off" />
+          <label class="sr-only" for="website">Sitio web</label>
+          <input class="sr-only" type="text" name="website" id="website" placeholder="Tu sitio web" tabindex="-1" autocomplete="off" />
 
           <textarea
             name="message" placeholder="Cuéntanos tu caso (opcional)" rows="4"
             bind:this={messageInput}
             class="w-full px-4 py-3 bg-secondary rounded-lg
-              focus:outline-none focus:ring-2 ring-default transition-all duration-200">
-          </textarea>
+              focus:outline-none focus:ring-2 ring-default transition-all duration-200"
+          ></textarea>
 
-          <div style="sr-only">
-            <span class="sr-only">Información</span>
-            <textarea name="information" placeholder="Añade información" rows="4" tabindex="-1" autocomplete="off"></textarea>
-          </div>
+          <span class="sr-only">Información</span>
+          <textarea
+            class="sr-only" name="information" placeholder="Añade información" rows="4" tabindex="-1" autocomplete="off"
+          ></textarea>
 
           <button
             type="submit" disabled={sending}
