@@ -23,7 +23,7 @@
     }
   </style>
   
-  <title>Consultoría de Inteligencia Artificial en Mallorca | Eufia</title>
+  <title>Eufia - Consultoría de Inteligencia Artificial en Mallorca</title>
   <meta name="description" content="Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas." />
   
   <script type="application/ld+json">
