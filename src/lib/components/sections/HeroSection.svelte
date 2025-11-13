@@ -75,7 +75,7 @@
         </div>
       </div>
       <p class="text-xl mt-6 lg:mt-8">
-        Somos EUFIA, consultoría de IA con sede en
+        Somos EUFIA, startup de IA con sede en
         <span class="font-semibold">Mallorca</span>.
         Ayudamos a 
         <span class="font-semibold">PYMEs en toda España</span>
