@@ -11,7 +11,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "6.0.1",
+    "@sveltejs/adapter-vercel": "^6.1.2",
     "@sveltejs/kit": "2.25.1",
     "@types/node": "^24.0.15",
     "prettier": "^3.6.2",
