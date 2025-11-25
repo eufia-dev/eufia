@@ -59,6 +59,7 @@ export const actions: Actions = {
       } else {
         console.error(err);
       }
+      
       return { success: false, error: 'Error interno del servidor' };
     }
   }) satisfies Action
