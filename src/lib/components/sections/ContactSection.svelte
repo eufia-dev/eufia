@@ -6,6 +6,7 @@
   let messageInput: HTMLTextAreaElement | null = null;
   let sending = false;
   let sent = false;
+  let requestType = 'demo';
 
   const enhanceOptions = {
     pending: () => { sending = true; sent = false; },
@@ -21,52 +22,95 @@
     <div class="w-full text-center lg:text-left lg:mt-4">
       <header>
         <h2 class="text-4xl font-semibold">
-          Impulsa tu <span class="text-brand">negocio</span>
+          ¿Listo para <span class="text-brand">empezar</span>?
         </h2>
         <p class="mt-8 text-lg mx-auto">
-          Descubre cómo EUFIA puede ayudarte a optimizar tus procesos con inteligencia artificial.
+          Solicita una demostración personalizada o empieza tu prueba gratuita hoy mismo.
         </p>
       </header>
 
-      <div class="flex items-center justify-center lg:justify-start gap-2 mt-8">
-        <span class="material-symbols-rounded text-brand !text-3xl md:!text-4xl">assignment</span>
-        <h3 class="text-xl md:text-2xl font-semibold">Estudio gratuito personalizado</h3>
-      </div>
-      
-      <p class="text-lg mt-4">
-        Analizamos tu negocio sin compromiso y te mostramos las oportunidades de IA que pueden adaptarse a tus necesidades.
-      </p>
-      <div class="mt-6 flex-col sm:flex-row items-center justify-center gap-4 md:gap-20 hidden lg:flex">
-        <img src="/eufia_transparent.svg" alt="EUFIA" class="w-30 md:w-40 lg:w-40" />
-        <div class="text-center text-xl md:text-2xl">
-          Hazlo <span class="font-semibold">fácil.</span> Hazlo con <span class="font-semibold text-brand">IA.</span>
+      <div class="mt-8 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-rounded text-brand !text-2xl">schedule</span>
+          <span class="text-lg">Respuesta en menos de 24 horas</span>
         </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-rounded text-brand !text-2xl">videocam</span>
+          <span class="text-lg">Demo online o presencial en Baleares</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-rounded text-brand !text-2xl">credit_card_off</span>
+          <span class="text-lg">Sin tarjeta de crédito para empezar</span>
+        </div>
+      </div>
+
+      <div class="mt-8 hidden lg:block">
+        <a
+          href="https://control-horario.eufia.eu"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
+            hover:scale-102 transition-transform duration-200 font-medium">
+          <span>Ir a la aplicación</span>
+          <span class="material-symbols-rounded">open_in_new</span>
+        </a>
       </div>
     </div>
 
     <div class="w-full">
       <div class="bg-primary rounded-xl p-6 md:p-8">
         <h3 class="text-2xl font-semibold text-center">
-          Solicita tu estudio gratuito de IA
+          Contacta con nosotros
         </h3>
-        <p class="text-center mt-4">
-          Te contactaremos en menos de 24h para analizar tu caso
-        </p>
         
-        <form class="space-y-4 mt-4" method="POST" use:enhance={enhanceOptions}>
+        <form class="space-y-4 mt-6" method="POST" use:enhance={enhanceOptions}>
+          <!-- Request Type -->
+          <div class="flex gap-2">
+            <button
+              type="button"
+              class="flex-1 py-2 px-4 rounded-lg font-medium transition-all duration-200
+                {requestType === 'demo' 
+                  ? 'bg-brand text-inverse' 
+                  : 'bg-secondary text-primary hover:bg-stone-200'}"
+              on:click={() => requestType = 'demo'}
+            >
+              Solicitar demo
+            </button>
+            <button
+              type="button"
+              class="flex-1 py-2 px-4 rounded-lg font-medium transition-all duration-200
+                {requestType === 'info' 
+                  ? 'bg-brand text-inverse' 
+                  : 'bg-secondary text-primary hover:bg-stone-200'}"
+              on:click={() => requestType = 'info'}
+            >
+              Más información
+            </button>
+          </div>
+
           <input
             type="email" name="email" placeholder="Correo electrónico" required
             bind:this={emailInput}
             class="w-full px-4 py-3 bg-secondary rounded-lg
               focus:outline-none focus:ring-2 ring-default transition-all duration-200" />
 
+          <input
+            type="text" name="empresa" placeholder="Nombre de tu empresa (opcional)"
+            class="w-full px-4 py-3 bg-secondary rounded-lg
+              focus:outline-none focus:ring-2 ring-default transition-all duration-200" />
+
+          <!-- Honeypot fields -->
           <span class="sr-only">Empresa</span>
           <input class="sr-only" type="text" name="company" id="company" placeholder="Tu empresa" tabindex="-1" autocomplete="off" />
           <label class="sr-only" for="website">Sitio web</label>
           <input class="sr-only" type="text" name="website" id="website" placeholder="Tu sitio web" tabindex="-1" autocomplete="off" />
 
           <textarea
-            name="message" placeholder="Cuéntanos tu caso (opcional)" rows="4"
+            name="message" 
+            placeholder="{requestType === 'demo' 
+              ? '¿Cuántos empleados tienes? ¿Alguna pregunta específica?' 
+              : '¿En qué podemos ayudarte?'}" 
+            rows="3"
             bind:this={messageInput}
             class="w-full px-4 py-3 bg-secondary rounded-lg
               focus:outline-none focus:ring-2 ring-default transition-all duration-200"
@@ -76,6 +120,9 @@
           <textarea
             class="sr-only" name="information" placeholder="Añade información" rows="4" tabindex="-1" autocomplete="off"
           ></textarea>
+
+          <!-- Hidden field for request type -->
+          <input type="hidden" name="tipo" value={requestType} />
 
           <button
             type="submit" disabled={sending}
@@ -91,23 +138,28 @@
               <span class="material-symbols-rounded">check_circle</span>
               ¡Enviado!
             {:else}
-              Solicitar análisis
+              {requestType === 'demo' ? 'Solicitar demo' : 'Enviar mensaje'}
             {/if}
           </button>
           {#if sent}
-            <p class="text-center">
-              ¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.
+            <p class="text-center text-secondary">
+              ¡Gracias! Te contactaremos en menos de 24 horas.
             </p>
           {/if}
         </form>
       </div>
     </div>
 
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-20 mx-auto lg:hidden">
-      <img src="/eufia_transparent.svg" alt="EUFIA" class="w-30 md:w-40 lg:w-40" />
-      <div class="text-center text-xl md:text-2xl">
-        Hazlo <span class="font-semibold">fácil.</span> Hazlo con <span class="font-semibold text-brand">IA.</span>
-      </div>
+    <div class="lg:hidden w-full text-center">
+      <a
+        href="https://control-horario.eufia.eu"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
+          hover:scale-102 transition-transform duration-200 font-medium">
+        <span>Ir a la aplicación</span>
+        <span class="material-symbols-rounded">open_in_new</span>
+      </a>
     </div>
   </div>
 </section>

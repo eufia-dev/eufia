@@ -25,22 +25,22 @@
 <svelte:head>
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="EUFIA"/>
-  <meta property="og:title" content="Consultoría de Inteligencia Artificial en Mallorca | Eufia" />
-  <meta property="og:description" content="Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas." />
+  <meta property="og:site_name" content="EUFIA Control Horario"/>
+  <meta property="og:title" content="EUFIA Control Horario - Control Horario Digital para Empresas" />
+  <meta property="og:description" content="Cumple con el nuevo Real Decreto de control horario. Software de fichaje digital para PYMEs en España: fácil de usar, sin hardware, listo en 2 minutos. Primer mes gratis." />
   <meta property="og:url" content="https://www.eufia.eu/" />
   <meta property="og:image" content="https://www.eufia.eu/eufia_1200.png" />
   <meta property="og:image:secure_url" content="https://www.eufia.eu/eufia_1200.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Eufia - Consultoría de IA en Mallorca" />
+  <meta property="og:image:alt" content="EUFIA Control Horario - Software de fichaje digital" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Consultoría de Inteligencia Artificial en Mallorca | Eufia" />
-  <meta name="twitter:description" content="Consultoría de inteligencia artificial en Mallorca y Baleares. Especialistas en automatización para PYMEs y empresas en España: chatbots, agentes de IA e integración rápida con tus herramientas." />
+  <meta name="twitter:title" content="EUFIA Control Horario - Control Horario Digital para Empresas" />
+  <meta name="twitter:description" content="Cumple con el nuevo Real Decreto de control horario. Software de fichaje digital para PYMEs en España: fácil de usar, sin hardware, listo en 2 minutos." />
   <meta name="twitter:image" content="https://www.eufia.eu/eufia_1200.png" />
-  <meta name="twitter:image:alt" content="Eufia - Consultoría de IA en Mallorca" />
+  <meta name="twitter:image:alt" content="EUFIA Control Horario - Software de fichaje digital" />
   <meta name="twitter:url" content="https://www.eufia.eu/" />
   <meta name="twitter:domain" content="eufia.eu" />
 
@@ -57,50 +57,23 @@
     <div class="relative">
       <div class="flex items-center justify-between gap-4 bg-gradient-to-b from-stone-50 via-stone-50 to-stone-50/90">
         <a href="/" aria-label="Inicio">
-          <img src="/eufia_transparent.svg" alt="Eufia" class="w-28 mx-1 md:mx-4 my-2" />
+          <img src="/eufia_transparent.svg" alt="EUFIA Control Horario" class="w-28 mx-1 md:mx-4 my-2" />
         </a>
         <nav class="hidden px-8 py-4 md:flex items-center gap-8">
-          <div class="relative group left-1">
-            <a
-              href="/#soluciones"
-              class="flex items-center gap-1 hover:text-brand transition-colors duration-200"
-            >
-              <span class="border-b border-transparent hover:border-brand transition-colors duration-200">Soluciones</span>
-              <span class="material-symbols-rounded transition-transform duration-200 group-hover:rotate-180">expand_more</span>
-            </a>
-            <div
-              class="absolute top-full left-0 mt-2 bg-primary border border-default rounded-lg overflow-hidden
-                opacity-0 invisible max-h-0 group-hover:opacity-100 group-hover:visible group-hover:max-h-40
-                transition-all duration-250 z-50"
-            >
-              <div class="py-1">
-                <a href="/#agentes-ia" class="block px-4 py-2 group/item">
-                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
-                    Agentes IA
-                  </span>
-                </a>
-                <a href="/#chatbots" class="block px-4 py-2 group/item">
-                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
-                    Chatbots
-                  </span>
-                </a>
-                <a href="/#automatizaciones" class="block px-4 py-2 group/item">
-                  <span class="border-b border-transparent group-hover/item:text-brand group-hover/item:border-brand transition-colors duration-200">
-                    Automatizaciones
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <a href="/#sectores"
+          <a href="/#funcionalidades"
             class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
           >
-            Sectores
+            Funcionalidades
           </a>
-          <a href="/#beneficios"
+          <a href="/#precios"
             class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
           >
-            Beneficios
+            Precios
+          </a>
+          <a href="/gestorias"
+            class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
+          >
+            Para Gestorías
           </a>
           <a href="/#conocenos"
             class="border-b border-transparent hover:text-brand hover:border-brand transition-colors duration-200"
@@ -156,58 +129,29 @@
   >
     <nav class="mt-20 mb-10 px-6 z-40">
       <a
-        href="/#soluciones"
+        href="/#funcionalidades"
         class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
         on:click={closeMobileMenu}
       >
-        <span>Soluciones</span>
-        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <div class="my-1 ml-1">
-        <a
-          href="/#agentes-ia"
-          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
-          on:click={closeMobileMenu}
-        >
-          <span>Agentes IA</span>
-          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a
-          href="/#chatbots"
-          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
-          on:click={closeMobileMenu}
-        >
-          <span>Chatbots</span>
-          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a
-          href="/#automatizaciones"
-          class="flex items-center justify-between !text-xl py-2 pl-4 hover:text-brand transition-colors duration-200 relative group"
-          on:click={closeMobileMenu}
-        >
-          <span>Automatizaciones</span>
-          <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
-        </a>
-      </div>
-      <a
-        href="/#sectores"
-        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
-        on:click={closeMobileMenu}
-      >
-        <span>Sectores</span>
+        <span>Funcionalidades</span>
         <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
       </a>
       <a
-        href="/#beneficios"
+        href="/#precios"
         class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
         on:click={closeMobileMenu}
       >
-        <span>Beneficios</span>
+        <span>Precios</span>
+        <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a
+        href="/gestorias"
+        class="flex items-center justify-between !text-xl py-2 hover:text-brand transition-colors duration-200 relative group"
+        on:click={closeMobileMenu}
+      >
+        <span>Para Gestorías</span>
         <span class="material-symbols-rounded group-hover:-translate-x-2 transition-all duration-300">arrow_forward</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
       </a>
@@ -247,7 +191,7 @@
   <footer class="bg-primary border-t border-default py-4">
     <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="/eufia_transparent.svg" alt="Eufia" class="w-24" />
+        <img src="/eufia_transparent.svg" alt="EUFIA" class="w-24" />
       </div>
 
       <div class="flex items-center gap-3 flex-wrap justify-center">

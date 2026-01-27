@@ -47,7 +47,7 @@ export const actions: Actions = {
       await transporter.sendMail({
         from: SMTP_USER,
         to: 'info@eufia.eu',
-        subject: 'Nuevo contacto desde eufia.eu',
+        subject: 'Nuevo contacto - EUFIA Control Horario',
         text: `Email: ${email}\nMensaje: ${message ?? ''}`,
         html: `<p><strong>Email:</strong> ${email}</p><p><strong>Mensaje:</strong><br/>${message ?? ''}</p>`
       });
