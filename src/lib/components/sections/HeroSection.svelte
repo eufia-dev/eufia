@@ -26,12 +26,12 @@
     fullScreen: { enable: false },
     background: { color: { value: 'transparent' } },
     particles: {
-      number: { value: 100, density: { enable: true, area: 800 } },
+      number: { value: 80, density: { enable: true, area: 800 } },
       color: { value: ['#F05F00', '#FF7A1A', '#FF6B00'] },
-      links: { enable: true, color: '#F05F00', opacity: 0.6, distance: 200, width: 1.5 },
-      move: { enable: true, speed: 0.6, direction: 'none', outModes: { default: 'out' } },
-      opacity: { value: 0.8 },
-      size: { value: { min: 2.5, max: 5 } },
+      links: { enable: true, color: '#F05F00', opacity: 0.5, distance: 180, width: 1.2 },
+      move: { enable: true, speed: 0.5, direction: 'none', outModes: { default: 'out' } },
+      opacity: { value: 0.7 },
+      size: { value: { min: 2, max: 4 } },
       shape: { type: 'circle' }
     },
     interactivity: {
@@ -57,39 +57,47 @@
         bg-gradient-to-b from-transparent via-stone-50/70 to-stone-50 z-5"
     ></div>
     <div class="relative z-10 max-w-7xl mx-auto p-8 md:p-16">
-      <div class="flex flex-col lg:flex-row items-center gap-6">
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div class="flex-1 text-center lg:text-left">
-          <h1 class="sr-only">Consultoría de Inteligencia Artificial en Mallorca y Baleares</h1>
-          <h2 class="text-4xl font-semibold">
-            Impulsamos tu negocio con
-            <span class="text-brand">Inteligencia Artificial</span>
-          </h2>
-          <h3 class="text-xl font-medium italic mt-10 lg:mt-14">
-            ¿Quieres aprovechar la IA?
-            <br/>
-            ¿No tienes claro cómo puede mejorar tu negocio?
-          </h3>
+          <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+            Cumple con el <span class="text-brand">Real Decreto</span> de control horario sin complicaciones
+          </h1>
+          <p class="text-xl text-secondary mt-6">
+            Software de fichaje digital para PYMEs en España. 
+            <span class="font-semibold text-primary">Listo en 2 minutos</span>, 
+            sin hardware, sin instalaciones.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start">
+            <a
+              href="https://control-horario.eufia.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Comenzar prueba gratuita"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
+                hover:scale-102 transition-transform duration-200 font-medium">
+              <span>Prueba gratis 1 mes</span>
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+            <a
+              href="#contacto"
+              aria-label="Solicitar una demostración"
+              class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand text-brand px-6 py-3
+                hover:bg-brand hover:text-inverse transition-all duration-200 font-medium">
+              <span>Solicitar demo</span>
+              <span class="material-symbols-rounded">calendar_month</span>
+            </a>
+          </div>
+          <p class="text-sm text-secondary mt-4">
+            Sin tarjeta de crédito. Sin compromiso.
+          </p>
         </div>
-        <div class="flex-shrink-0">
-          <img src="/eufia_transparent.svg" alt="Eufia - Consultoría de IA" class="w-100 lg:w-120 xl:w-160" />
+        <div class="flex-shrink-0 w-full lg:w-auto max-w-md lg:max-w-none">
+          <img 
+            src="/screenshots/main.png" 
+            alt="EUFIA Control Horario - Panel de fichaje" 
+            class="w-full lg:w-[400px] xl:w-[480px] rounded-xl shadow-2xl border border-stone-200"
+          />
         </div>
-      </div>
-      <p class="text-xl mt-6 lg:mt-8">
-        Somos EUFIA, startup de IA con sede en
-        <span class="font-semibold">Mallorca</span>.
-        Ayudamos a 
-        <span class="font-semibold">PYMEs en toda España</span>
-        a automatizar procesos, reducir costes y ganar ventaja competitiva con agentes, chatbots y automatizaciones.
-      </p>
-      <div class="mt-12">
-        <a
-          href="#contacto"
-          aria-label="Ir al formulario de contacto"
-          class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3 mt-10
-            hover:scale-102 transition-transform duration-200">
-          <span>Descubre el potencial de la IA</span>
-          <span class="material-symbols-rounded">arrow_forward</span>
-        </a>
       </div>
     </div>
   </div>
