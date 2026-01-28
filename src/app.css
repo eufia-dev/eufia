@@ -41,6 +41,14 @@
   @apply bg-stone-100;
 }
 
+@utility bg-strong {
+  @apply bg-stone-400;
+}
+
+@utility bg-dark {
+  @apply bg-stone-800;
+}
+
 @utility bg-border {
   @apply bg-stone-200;
 }
@@ -51,6 +59,10 @@
 
 @utility border-strong {
   @apply border-stone-400;
+}
+
+@utility border-dark {
+  @apply border-stone-800;
 }
 
 @utility ring-default {

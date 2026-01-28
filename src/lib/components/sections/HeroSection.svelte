@@ -59,8 +59,11 @@
     <div class="relative z-10 max-w-7xl mx-auto p-8 md:p-16">
       <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div class="flex-1 text-center lg:text-left">
+          <p class="text-sm font-medium text-brand mb-3 tracking-wide uppercase mt-8">
+            ✓ Cumple con el Real Decreto
+          </p>
           <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
-            Cumple con el <span class="text-brand">Real Decreto</span> de control horario sin complicaciones
+            Control horario <span class="text-brand">sin complicaciones</span>
           </h1>
           <p class="text-xl text-secondary mt-6">
             Software de fichaje digital para PYMEs en España. 
