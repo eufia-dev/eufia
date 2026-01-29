@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="EUFIA Control Horario"/>
-  <meta property="og:title" content="EUFIA Control Horario - Control Horario Digital para Empresas" />
+  <meta property="og:title" content="EUFIA - Control Horario | Fichaje Digital para Empresas" />
   <meta property="og:description" content="Cumple con el nuevo Real Decreto de control horario. Software de fichaje digital para PYMEs en España: fácil de usar, sin hardware, listo en 2 minutos. Primer mes gratis." />
   <meta property="og:url" content="https://www.eufia.eu/" />
   <meta property="og:image" content="https://www.eufia.eu/eufia_1200.png" />
@@ -34,13 +34,13 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="EUFIA Control Horario - Software de fichaje digital" />
+  <meta property="og:image:alt" content="EUFIA - Control Horario | Fichaje Digital para Empresas" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EUFIA Control Horario - Control Horario Digital para Empresas" />
+  <meta name="twitter:title" content="EUFIA - Control Horario | Fichaje Digital para Empresas" />
   <meta name="twitter:description" content="Cumple con el nuevo Real Decreto de control horario. Software de fichaje digital para PYMEs en España: fácil de usar, sin hardware, listo en 2 minutos." />
   <meta name="twitter:image" content="https://www.eufia.eu/eufia_1200.png" />
-  <meta name="twitter:image:alt" content="EUFIA Control Horario - Software de fichaje digital" />
+  <meta name="twitter:image:alt" content="EUFIA - Control Horario | Fichaje Digital para Empresas" />
   <meta name="twitter:url" content="https://www.eufia.eu/" />
   <meta name="twitter:domain" content="eufia.eu" />
 
