@@ -7,7 +7,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: '¿Qué pasa si no cumplo con la normativa?',
-    a: 'Las sanciones por incumplimiento de la normativa de control horario pueden ir desde los <strong>751€</strong> para infracciones leves hasta los <strong>225.018€</strong> en casos graves. Además, ante una inspección de trabajo sin registros válidos, la empresa queda expuesta a reclamaciones laborales.'
+    a: 'Las sanciones por incumplimiento de la normativa de control horario pueden ir desde los <strong>70€</strong> para infracciones leves hasta los <strong>225.018€</strong> en casos muy graves. Lo más habitual es que las infracciones se resuelvan con una multas entre 1.000€ y 3.000€. Además, ante una inspección de trabajo sin registros válidos, la empresa queda expuesta a reclamaciones laborales.'
   },
   {
     q: '¿Cuánto tiempo lleva implementar EUFIA Control Horario?',

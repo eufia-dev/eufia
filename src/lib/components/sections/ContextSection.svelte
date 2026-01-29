@@ -15,8 +15,7 @@
           Ya no valdrán las hojas de papel ni los Excel.
         </p>
         <p class="text-lg text-secondary mt-4">
-          Las sanciones por incumplimiento pueden alcanzar los 
-          <span class="font-semibold text-primary">225.000€</span> en casos graves.
+          El incumplimiento de esta normativa conlleva <span class="font-semibold text-primary">sanciones económicas</span>.
         </p>
       </div>
       <div class="grid grid-cols-2 gap-4">

@@ -80,7 +80,7 @@
           "name": "¿Qué pasa si no cumplo con la normativa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Las sanciones por incumplimiento pueden ir desde los 751€ para infracciones leves hasta los 225.018€ en casos graves. Además, la empresa queda expuesta a reclamaciones laborales."
+            "text": "Las sanciones por incumplimiento pueden ir desde los 70€ para infracciones leves hasta los 225.018€ en casos muy graves. Lo más habitual es que las infracciones se resuelvan con una multas entre 1.000€ y 3.000€. Además, ante una inspección de trabajo sin registros válidos, la empresa queda expuesta a reclamaciones laborales."
           }
         },
         {
