@@ -196,7 +196,7 @@
             <p class="text-secondary mt-2">{step.description}</p>
           </div>
           {#if step.number < 4}
-            <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-stone-300"></div>
+            <div class="hidden lg:block absolute top-1/2 -right-6 w-6 h-0.5 bg-stone-300"></div>
           {/if}
         </div>
       {/each}
