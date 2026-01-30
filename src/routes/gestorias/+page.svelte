@@ -65,20 +65,21 @@
 
 <div class="space-y-24 md:space-y-30 mb-10">
   <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-stone-800 to-stone-900 text-inverse overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0); background-size: 32px 32px;"></div>
-    </div>
+  <section class="relative overflow-hidden">
+    <!-- Decorative brand accent -->
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-brand/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-brand/5 rounded-full blur-3xl"></div>
+    
     <div class="relative max-w-7xl mx-auto px-8 md:px-16 py-16 md:py-24">
       <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 bg-brand/20 text-brand px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <div class="inline-flex items-center gap-2 bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium mb-6 border border-brand/20">
           <span class="material-symbols-rounded !text-lg">handshake</span>
           <span>Programa de colaboración</span>
         </div>
         <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
           Genera <span class="text-brand">ingresos recurrentes</span> con EUFIA Control Horario
         </h1>
-        <p class="text-xl text-stone-300 mt-6">
+        <p class="text-xl text-secondary mt-6">
           Ofrece a tus clientes la solución de control horario más sencilla del mercado y recibe comisiones mensuales 
           sin añadir carga de trabajo a tu despacho.
         </p>
@@ -92,8 +93,8 @@
           </a>
           <a
             href="#como-funciona"
-            class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-stone-600 text-inverse px-6 py-3
-              hover:border-stone-400 transition-all duration-200 font-medium">
+            class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-stone-300 text-primary px-6 py-3
+              hover:border-brand hover:text-brand transition-all duration-200 font-medium">
             <span>Ver cómo funciona</span>
           </a>
         </div>
@@ -252,39 +253,39 @@
 
   <!-- Local Support -->
   <section class="max-w-7xl mx-auto px-8 md:px-16">
-    <div class="bg-gradient-to-br from-brand to-orange-600 rounded-2xl p-8 md:p-12 text-inverse">
+    <div class="bg-secondary rounded-2xl p-8 md:p-12 border border-default">
       <div class="grid gap-8 lg:grid-cols-2 items-center">
         <div>
-          <div class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div class="inline-flex items-center gap-2 bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium mb-6 border border-brand/20">
             <span class="material-symbols-rounded !text-lg">location_on</span>
             <span>Presencia local</span>
           </div>
           <h2 class="text-3xl md:text-4xl font-semibold">
-            Atención presencial en Baleares
+            Atención presencial en <span class="text-brand">Baleares</span>
           </h2>
-          <p class="text-lg text-orange-100 mt-6">
-            A diferencia de otras soluciones, en EUFIA ofrecemos <strong class="text-white">implantación presencial</strong> 
+          <p class="text-lg text-secondary mt-6">
+            A diferencia de otras soluciones, en EUFIA ofrecemos <strong class="text-primary">implantación presencial</strong> 
             en Mallorca e Ibiza. Visitamos tu despacho y el de tus clientes para hacer las demostraciones 
             y formaciones en persona.
           </p>
-          <ul class="mt-6 space-y-3 text-orange-100">
+          <ul class="mt-6 space-y-3 text-secondary">
             <li class="flex items-center gap-3">
-              <span class="material-symbols-rounded !text-xl text-white">check_circle</span>
+              <span class="material-symbols-rounded !text-xl text-brand">check_circle</span>
               <span>Demos presenciales en tu despacho</span>
             </li>
             <li class="flex items-center gap-3">
-              <span class="material-symbols-rounded !text-xl text-white">check_circle</span>
+              <span class="material-symbols-rounded !text-xl text-brand">check_circle</span>
               <span>Formación in situ a tus clientes</span>
             </li>
             <li class="flex items-center gap-3">
-              <span class="material-symbols-rounded !text-xl text-white">check_circle</span>
+              <span class="material-symbols-rounded !text-xl text-brand">check_circle</span>
               <span>Soporte cercano y respuesta rápida</span>
             </li>
           </ul>
         </div>
         <div class="text-center">
-          <p class="text-6xl md:text-7xl font-bold">24h</p>
-          <p class="text-xl mt-2">Respuesta garantizada</p>
+          <p class="text-6xl md:text-7xl font-bold text-brand">24h</p>
+          <p class="text-xl text-secondary mt-2">Respuesta garantizada</p>
         </div>
       </div>
     </div>
