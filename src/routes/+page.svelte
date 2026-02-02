@@ -19,7 +19,7 @@
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "EUFIA Control Horario",
+      "name": "EUFIA - Control Horario",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, iOS, Android",
       "description": "Software de control horario digital para empresas. Cumple con el Real Decreto de registro de jornada laboral.",
