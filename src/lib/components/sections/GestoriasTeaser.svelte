@@ -20,7 +20,7 @@
           <ul class="mt-6 space-y-3">
             <li class="flex items-center gap-3 text-stone-600">
               <span class="material-symbols-rounded !text-xl text-brand">trending_up</span>
-              <span>Comisiones mensuales recurrentes hasta el <span class="font-semibold text-stone-800">30%</span></span>
+              <span>Comisiones mensuales recurrentes hasta el <span class="font-semibold text-stone-800">25%</span></span>
             </li>
             <li class="flex items-center gap-3 text-stone-600">
               <span class="material-symbols-rounded !text-xl text-brand">person_off</span>
@@ -46,15 +46,15 @@
             <div class="absolute inset-0 bg-brand/10 rounded-full blur-3xl"></div>
             <div class="relative grid grid-cols-3 gap-4">
               <div class="bg-white rounded-xl p-6 text-center shadow-md border border-stone-100">
-                <p class="text-3xl font-bold text-brand">20%</p>
+                <p class="text-3xl font-bold text-brand">15%</p>
                 <p class="text-sm text-stone-500 mt-1">Starter</p>
               </div>
               <div class="bg-white rounded-xl p-6 text-center shadow-md border border-stone-100">
-                <p class="text-3xl font-bold text-brand">25%</p>
+                <p class="text-3xl font-bold text-brand">20%</p>
                 <p class="text-sm text-stone-500 mt-1">Partner</p>
               </div>
               <div class="bg-white rounded-xl p-6 text-center shadow-md border border-stone-100">
-                <p class="text-3xl font-bold text-brand">30%</p>
+                <p class="text-3xl font-bold text-brand">25%</p>
                 <p class="text-sm text-stone-500 mt-1">Premium</p>
               </div>
             </div>

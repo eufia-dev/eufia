@@ -60,7 +60,7 @@
 
 <svelte:head>
   <title>Programa para Gestorías | EUFIA Control Horario</title>
-  <meta name="description" content="Genera ingresos recurrentes con EUFIA Control Horario. Programa de colaboración para gestorías y asesorías: hasta 30% de comisión mensual, sin carga operativa." />
+  <meta name="description" content="Genera ingresos recurrentes con EUFIA Control Horario. Programa de colaboración para gestorías y asesorías: hasta 25% de comisión mensual, sin carga operativa." />
 </svelte:head>
 
 <div class="space-y-24 md:space-y-30 mb-10">
@@ -161,7 +161,7 @@
             </li>
             <li class="flex items-center gap-3">
               <span class="material-symbols-rounded text-brand">percent</span>
-              <span>Comisión Premium: 30%</span>
+              <span>Comisión Premium: 25%</span>
             </li>
           </ul>
         </div>
