@@ -120,7 +120,7 @@
           {#if tier.popular}
             <div class="absolute -top-3 left-1/2 -translate-x-1/2">
               <span class="bg-brand text-inverse text-sm font-medium px-3 py-1 rounded-full">
-                Recomendado
+                Popular
               </span>
             </div>
           {/if}
