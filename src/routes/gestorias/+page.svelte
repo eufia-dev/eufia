@@ -3,20 +3,20 @@
     {
       name: 'Starter',
       range: '1-50 empresas',
-      commission: 20,
+      commission: 15,
       color: 'bg-stone-100'
     },
     {
       name: 'Partner',
       range: '51-100 empresas',
-      commission: 25,
+      commission: 20,
       color: 'bg-brand/10',
       popular: true
     },
     {
       name: 'Premium',
       range: '100+ empresas',
-      commission: 30,
+      commission: 25,
       color: 'bg-stone-100'
     }
   ];
