@@ -2,7 +2,7 @@ import type { Actions } from './$types';
 import type { Action } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
-import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } from '$env/static/private';
+import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM } from '$env/static/private';
 
 export const actions: Actions = {
   default: (async ({ request }) => {
@@ -45,7 +45,7 @@ export const actions: Actions = {
       });
 
       await transporter.sendMail({
-        from: SMTP_USER,
+        from: SMTP_FROM,
         to: 'info@eufia.eu',
         subject: 'Nuevo contacto - EUFIA Control Horario',
         text: `Email: ${email}\nMensaje: ${message ?? ''}`,
