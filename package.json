@@ -23,6 +23,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource-variable/saira": "^5.2.8",
+    "@fontsource/material-symbols-rounded": "^5.2.35",
     "@tailwindcss/vite": "^4.1.11",
     "@tsparticles/slim": "^3.9.1",
     "@tsparticles/svelte": "^3.1.1",

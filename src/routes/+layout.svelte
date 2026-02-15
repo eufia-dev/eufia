@@ -1,11 +1,12 @@
 <script>
-  import { webVitals } from '$lib/vitals';
-  import { browser } from '$app/environment';
-  import { page } from '$app/state';
+  // import { webVitals } from '$lib/vitals';
+  // import { browser } from '$app/environment';
+  // import { page } from '$app/state';
 
+  import '@fontsource/material-symbols-rounded/300.css';
   import '../app.css';
   
-  let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+  // let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
   let mobileMenuOpen = false;
   
@@ -13,13 +14,16 @@
     mobileMenuOpen = false;
   }
 
-  $: if (browser && analyticsId) {
-    webVitals({
-      path: page.url.pathname,
-      params: {},
-      analyticsId
-    });
-  }
+  // Vercel Web Vitals telemetry intentionally disabled.
+  // Previous implementation kept here commented for future reactivation:
+  //
+  // $: if (browser && analyticsId) {
+  //   webVitals({
+  //     path: page.url.pathname,
+  //     params: {},
+  //     analyticsId
+  //   });
+  // }
 </script>
 
 <svelte:head>

@@ -26,7 +26,7 @@
         <ul class="list-disc list-inside space-y-2 ml-4">
           <li><strong>EUFIA:</strong> EUFIA STRATEGIC GROUP S.L., con CIF B24973885 y domicilio social en C/ Isaac Newton, 0, Edificio 17, ParcBit - 07120 Palma (Illes Balears).</li>
           <li><strong>Servicio:</strong> el software EUFIA Control Horario, accesible a través de <a href="https://control-horario.eufia.eu" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline">control-horario.eufia.eu</a>, incluyendo la aplicación web y móvil.</li>
-          <li><strong>Usuario:</strong> cualquier persona física o jurídica que accede, utiliza o contrata el Servicio.</li>
+          <li><strong>Usuario:</strong> cualquier persona física profesional o jurídica que accede, utiliza o contrata el Servicio.</li>
           <li><strong>Cliente:</strong> el Usuario que ha contratado un plan de suscripción al Servicio.</li>
           <li><strong>Sitio web:</strong> el sitio web disponible en <a href="https://www.eufia.eu" class="text-brand hover:underline">www.eufia.eu</a>.</li>
         </ul>
@@ -41,6 +41,11 @@
           Servicio permite a las empresas cumplir con la normativa vigente en materia de registro de jornada
           laboral, incluyendo el Real Decreto que regula el control horario, ofreciendo funcionalidades de
           fichaje digital, generación de informes, gestión de empleados y analítica de proyectos.
+        </p>
+        <p class="mt-4">
+          El Servicio está orientado de forma preferente a empresas y profesionales (entorno B2B). En caso de
+          acceso por parte de consumidores, se aplicarán en todo caso los derechos y garantías que resulten
+          imperativos conforme a la normativa de consumo aplicable.
         </p>
       </div>
 

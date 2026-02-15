@@ -55,7 +55,7 @@
 
   <div class="text-center mt-12">
     <a
-      href="https://control-horario.eufia.eu"
+      href="https://control-horario.eufia.eu/register"
       target="_blank"
       rel="noopener noreferrer"
       class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3

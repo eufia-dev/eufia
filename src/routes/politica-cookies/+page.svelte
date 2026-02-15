@@ -15,7 +15,7 @@
     </a>
 
     <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">Política de Cookies</h1>
-    <p class="text-sm text-secondary mb-12">Última actualización: 14 de febrero de 2026</p>
+    <p class="text-sm text-secondary mb-12">Última actualización: 15 de febrero de 2026</p>
 
     <div class="space-y-10 text-primary leading-relaxed">
 
@@ -44,7 +44,7 @@
       <div>
         <h2 class="text-xl font-semibold mb-4">3. Tipos de cookies utilizadas</h2>
         <p class="mb-6">
-          A continuación se detallan las cookies utilizadas en este sitio web, su finalidad y duración:
+          Actualmente, este sitio web no utiliza cookies propias ni de terceros.
         </p>
 
         <div class="overflow-x-auto">
@@ -59,10 +59,7 @@
             </thead>
             <tbody>
               <tr class="border-b border-default">
-                <td class="px-4 py-3 font-mono text-sm">userid</td>
-                <td class="px-4 py-3">Técnica / Funcional</td>
-                <td class="px-4 py-3">Identifica de forma anónima a los visitantes del sitio web para mejorar la experiencia de navegación y el análisis interno.</td>
-                <td class="px-4 py-3">Sesión del navegador</td>
+                <td class="px-4 py-3" colspan="4">No se instalan cookies en el dispositivo del usuario en la configuración actual del sitio web.</td>
               </tr>
             </tbody>
           </table>
@@ -71,8 +68,8 @@
         <div class="mt-6 space-y-4">
           <h3 class="text-lg font-medium">Clasificación de las cookies</h3>
           <ul class="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Cookies técnicas o funcionales:</strong> son necesarias para el correcto funcionamiento del sitio web. Permiten funcionalidades básicas como la navegación y el acceso a áreas seguras.</li>
-            <li><strong>Cookies de análisis:</strong> permiten realizar un seguimiento y análisis del comportamiento de los usuarios del sitio web de forma agregada. Actualmente, este sitio web no utiliza cookies de análisis de terceros.</li>
+            <li><strong>Situación actual:</strong> no se utilizan cookies técnicas, analíticas, publicitarias ni de terceros.</li>
+            <li><strong>Cambios futuros:</strong> si en el futuro se activaran cookies, esta política se actualizará para informar de su tipología, finalidad, duración y base jurídica aplicable.</li>
           </ul>
         </div>
       </div>
@@ -81,8 +78,9 @@
       <div>
         <h2 class="text-xl font-semibold mb-4">4. ¿Cómo gestionar las cookies?</h2>
         <p class="mb-4">
-          Usted puede permitir, bloquear o eliminar las cookies instaladas en su dispositivo mediante la
-          configuración de las opciones de su navegador. A continuación le proporcionamos enlaces a las
+          Aunque actualmente no instalamos cookies, usted puede permitir, bloquear o eliminar las cookies de
+          otros sitios web mediante la configuración de las opciones de su navegador. A continuación le
+          proporcionamos enlaces a las
           instrucciones de los navegadores más comunes:
         </p>
         <ul class="list-disc list-inside space-y-2 ml-4">
@@ -100,8 +98,9 @@
           </li>
         </ul>
         <p class="mt-4">
-          Tenga en cuenta que si deshabilita las cookies, algunas funcionalidades del sitio web podrían no
-          estar disponibles o no funcionar correctamente.
+          En caso de que en el futuro se incorporen cookies en este sitio web, podrá gestionarlas igualmente a
+          través de la configuración de su navegador y, cuando proceda legalmente, mediante las opciones de
+          configuración de consentimiento que se habiliten.
         </p>
       </div>
 
@@ -109,9 +108,9 @@
       <div>
         <h2 class="text-xl font-semibold mb-4">5. Transferencias a terceros</h2>
         <p>
-          Actualmente, este sitio web no comparte la información recopilada mediante cookies con terceros
-          con fines publicitarios. En caso de que en el futuro se incorporaran cookies de terceros, esta
-          política será actualizada para reflejar dicho cambio.
+          Dado que actualmente no se utilizan cookies en este sitio web, no se realiza comunicación de datos
+          asociados a cookies a terceros. En caso de que en el futuro se incorporen cookies de terceros, esta
+          política se actualizará para reflejarlo.
         </p>
       </div>
 
@@ -119,10 +118,9 @@
       <div>
         <h2 class="text-xl font-semibold mb-4">6. Base jurídica</h2>
         <p>
-          El uso de cookies técnicas y funcionales se fundamenta en el interés legítimo de EUFIA STRATEGIC GROUP S.L. en
-          garantizar el correcto funcionamiento del sitio web (art. 6.1.f RGPD). Para el uso de cookies no
-          esenciales (analíticas, publicitarias, etc.), se solicitará el consentimiento previo del usuario
-          conforme al artículo 22.2 de la LSSI-CE y al artículo 6.1.a del RGPD.
+          Al no utilizarse cookies en la configuración actual del sitio web, no se realiza tratamiento de datos
+          personales basado en cookies. Si en el futuro se incorporaran cookies no exentas, se solicitará el
+          consentimiento previo del usuario conforme al artículo 22.2 de la LSSI-CE y al artículo 6.1.a del RGPD.
         </p>
       </div>
 

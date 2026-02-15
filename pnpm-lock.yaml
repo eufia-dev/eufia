@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/saira':
         specifier: ^5.2.8
         version: 5.2.10
+      '@fontsource/material-symbols-rounded':
+        specifier: ^5.2.35
+        version: 5.2.35
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.1.14(vite@7.1.8(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1))
@@ -218,6 +221,9 @@ packages:
 
   '@fontsource-variable/saira@5.2.10':
     resolution: {integrity: sha512-85+vRS9XjV3oBfX4LFPK5VMty720UV9ehAfH8beKbrIMd/VWy04XjC+ZLTcjsBXZxZOlYbKlPdMnZQLIXfvmNg==}
+
+  '@fontsource/material-symbols-rounded@5.2.35':
+    resolution: {integrity: sha512-rxFBO3WMd47ie1UCAwK5aCY2OFT8Rq+vIr4jXcjKpM8i1HDlGy7elFA5plm4K3xLu8FXz9maIk+x+gzCGaWq3w==}
 
   '@isaacs/balanced-match@4.0.1':
     resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
@@ -1138,6 +1144,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/saira@5.2.10': {}
+
+  '@fontsource/material-symbols-rounded@5.2.35': {}
 
   '@isaacs/balanced-match@4.0.1': {}
 

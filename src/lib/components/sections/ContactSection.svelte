@@ -46,7 +46,7 @@
 
       <div class="mt-8 hidden lg:block">
         <a
-          href="https://control-horario.eufia.eu"
+          href="https://control-horario.eufia.eu/register"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
@@ -152,7 +152,7 @@
 
     <div class="lg:hidden w-full text-center">
       <a
-        href="https://control-horario.eufia.eu"
+        href="https://control-horario.eufia.eu/register"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
@@ -162,4 +162,12 @@
       </a>
     </div>
   </div>
+
+  <p class="mt-6 text-xs text-secondary leading-relaxed text-center max-w-4xl mx-auto">
+    Tratamos tus datos para responder a tu solicitud de contacto o demo. Conservación máxima: 12 meses.
+    Puedes ejercer tus derechos en
+    <a href="mailto:info@eufia.eu" class="text-brand hover:underline">info@eufia.eu</a>.
+    Más información en nuestra
+    <a href="/politica-privacidad" class="text-brand hover:underline">Política de Privacidad</a>.
+  </p>
 </section>

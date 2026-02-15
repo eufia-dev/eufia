@@ -2,7 +2,7 @@ import type { Actions } from './$types';
 import type { Action } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
-import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM } from '$env/static/private';
+import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM, SMTP_TO } from '$env/static/private';
 
 export const actions: Actions = {
   default: (async ({ request }) => {
@@ -28,10 +28,15 @@ export const actions: Actions = {
 
     const email = data.get('email');
     const message = data.get('message');
- 
+    const empresa = data.get('empresa');
+    const tipo = data.get('tipo');
+
     if (!email || typeof email !== 'string' || !email.trim()) {
       return { success: false, error: 'Email requerido' };
     }
+
+    const tipoLabel = tipo === 'demo' ? 'Solicitar demo' : 'Más información';
+    const empresaStr = typeof empresa === 'string' && empresa.trim() ? empresa.trim() : '(no indicada)';
 
     try {
       const transporter = nodemailer.createTransport({
@@ -46,15 +51,16 @@ export const actions: Actions = {
 
       await transporter.sendMail({
         from: SMTP_FROM,
-        to: 'info@eufia.eu',
+        to: SMTP_TO,
         subject: 'Nuevo contacto - EUFIA Control Horario',
-        text: `Email: ${email}\nMensaje: ${message ?? ''}`,
-        html: `<p><strong>Email:</strong> ${email}</p><p><strong>Mensaje:</strong><br/>${message ?? ''}</p>`
+        text: `Tipo: ${tipoLabel}\nEmpresa: ${empresaStr}\nEmail: ${email}\nMensaje: ${message ?? ''}`,
+        html: `<p><strong>Tipo de solicitud:</strong> ${tipoLabel}</p><p><strong>Empresa:</strong> ${empresaStr}</p><p><strong>Email:</strong> ${email}</p><p><strong>Mensaje:</strong><br/>${message ?? ''}</p>`
       });
 
       return { success: true };
     } catch (err: unknown) {
       if (err instanceof Error) {
+        console.log(err);
         console.error(err.message);
       } else {
         console.error(err);

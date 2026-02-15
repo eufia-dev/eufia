@@ -15,7 +15,7 @@
     </a>
 
     <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">Aviso Legal</h1>
-    <p class="text-sm text-secondary mb-12">Última actualización: 14 de febrero de 2026</p>
+    <p class="text-sm text-secondary mb-12">Última actualización: 15 de febrero de 2026</p>
 
     <div class="space-y-10 text-primary leading-relaxed">
 
@@ -31,7 +31,7 @@
           <li><strong>Denominación social:</strong> EUFIA STRATEGIC GROUP S.L.</li>
           <li><strong>CIF:</strong> B24973885</li>
           <li><strong>Domicilio social:</strong> C/ Isaac Newton, 0, Edificio 17, ParcBit - 07120 Palma (Illes Balears)</li>
-          <li><strong>Datos registrales:</strong> Inscrita en el Registro Mercantil de Palma de Mallorca, tomo 3219, folio 161, hoja PM-105907</li>
+          <li><strong>Datos registrales:</strong> Inscrita en el Registro Mercantil de Palma de Mallorca</li>
           <li><strong>Correo electrónico:</strong> <a href="mailto:info@eufia.eu" class="text-brand hover:underline">info@eufia.eu</a></li>
           <li><strong>Teléfono:</strong> <a href="tel:+34686733922" class="text-brand hover:underline">+34 686 733 922</a></li>
           <li><strong>Sitio web:</strong> <a href="https://www.eufia.eu" class="text-brand hover:underline">www.eufia.eu</a></li>
@@ -129,7 +129,8 @@
       <div>
         <h2 class="text-xl font-semibold mb-4">8. Cookies</h2>
         <p>
-          Este sitio web utiliza cookies. Para más información sobre el uso de cookies, consulte nuestra
+          Actualmente, este sitio web no utiliza cookies propias ni de terceros para fines de analítica o
+          seguimiento. Para más información y posibles actualizaciones futuras, consulte nuestra
           <a href="/politica-cookies" class="text-brand hover:underline font-medium">Política de Cookies</a>.
         </p>
       </div>

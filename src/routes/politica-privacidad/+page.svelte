@@ -15,7 +15,7 @@
     </a>
 
     <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">Política de Privacidad</h1>
-    <p class="text-sm text-secondary mb-12">Última actualización: 14 de febrero de 2026</p>
+    <p class="text-sm text-secondary mb-12">Última actualización: 15 de febrero de 2026</p>
 
     <div class="space-y-10 text-primary leading-relaxed">
 
@@ -40,18 +40,21 @@
         <h3 class="text-lg font-medium mb-2">a) Formulario de contacto</h3>
         <p class="mb-4">
           Cuando utiliza el formulario de contacto de nuestro sitio web, recopilamos los siguientes datos:
-          nombre, correo electrónico, teléfono (opcional), nombre de la empresa (opcional) y el mensaje que
-          nos envíe.
+          correo electrónico, nombre de la empresa (opcional), mensaje y tipo de solicitud (demo o más información).
         </p>
         <h3 class="text-lg font-medium mb-2">b) Cookies</h3>
         <p class="mb-4">
-          Nuestro sitio web utiliza cookies técnicas y funcionales. Para más información, consulte nuestra
+          Actualmente, nuestro sitio web no utiliza cookies. Si en el futuro se incorporaran cookies técnicas,
+          analíticas o de cualquier otra tipología, se informará previamente al usuario en esta política y en
+          nuestra
           <a href="/politica-cookies" class="text-brand hover:underline font-medium">Política de Cookies</a>.
         </p>
         <h3 class="text-lg font-medium mb-2">c) Datos de navegación</h3>
         <p>
-          Recopilamos información sobre su interacción con el sitio web a través de herramientas de analítica
-          web con el fin de mejorar nuestros servicios. Estos datos se procesan de forma agregada y anonimizada.
+          Actualmente no realizamos mediciones analíticas de comportamiento de navegación con fines de perfilado
+          o seguimiento individual en este sitio web. No obstante, pueden generarse registros técnicos mínimos
+          (por ejemplo, IP, fecha y recurso solicitado) necesarios para la seguridad y el funcionamiento de la
+          infraestructura de alojamiento.
         </p>
       </div>
 
@@ -62,8 +65,7 @@
         <ul class="list-disc list-inside space-y-2 ml-4">
           <li>Gestionar y responder a las consultas realizadas a través del formulario de contacto.</li>
           <li>Proporcionar información sobre nuestros servicios y productos, incluyendo demos de EUFIA Control Horario.</li>
-          <li>Enviar comunicaciones comerciales sobre nuestros productos y servicios, siempre que haya prestado su consentimiento previo.</li>
-          <li>Mejorar la experiencia de navegación y optimizar el rendimiento del sitio web.</li>
+          <li>Garantizar el correcto funcionamiento técnico y la seguridad del sitio web.</li>
           <li>Cumplir con las obligaciones legales aplicables.</li>
         </ul>
       </div>
@@ -73,9 +75,8 @@
         <h2 class="text-xl font-semibold mb-4">4. Base jurídica del tratamiento</h2>
         <p class="mb-4">El tratamiento de sus datos personales se fundamenta en las siguientes bases legales:</p>
         <ul class="list-disc list-inside space-y-2 ml-4">
-          <li><strong>Consentimiento del interesado</strong> (art. 6.1.a RGPD): para el envío de comunicaciones comerciales y el uso de cookies no esenciales.</li>
-          <li><strong>Ejecución de un contrato o medidas precontractuales</strong> (art. 6.1.b RGPD): para la gestión de solicitudes de información y demos.</li>
-          <li><strong>Interés legítimo</strong> (art. 6.1.f RGPD): para la mejora de nuestros servicios y la seguridad del sitio web.</li>
+          <li><strong>Aplicación de medidas precontractuales</strong> (art. 6.1.b RGPD): para la gestión de solicitudes de información y demos del servicio.</li>
+          <li><strong>Interés legítimo</strong> (art. 6.1.f RGPD): para la gestión de consultas no contractuales y para la seguridad del sitio web.</li>
           <li><strong>Cumplimiento de obligaciones legales</strong> (art. 6.1.c RGPD): cuando sea necesario para cumplir con la legislación vigente.</li>
         </ul>
       </div>
@@ -88,12 +89,13 @@
         </p>
         <ul class="list-disc list-inside space-y-2 ml-4">
           <li>Cuando sea necesario para cumplir con una obligación legal.</li>
-          <li>A proveedores de servicios que actúan como encargados del tratamiento (por ejemplo, servicios de alojamiento web y correo electrónico), con los que EUFIA STRATEGIC GROUP S.L. ha suscrito los correspondientes contratos de encargo de tratamiento.</li>
-          <li>Cuando medie el consentimiento previo del interesado.</li>
+          <li>A proveedores de servicios que actúan como encargados del tratamiento para prestar el servicio (por ejemplo, alojamiento web e infraestructura de correo electrónico/SMTP), con los que EUFIA STRATEGIC GROUP S.L. suscribe los correspondientes contratos de encargo de tratamiento cuando proceda.</li>
         </ul>
         <p class="mt-4">
-          En ningún caso se realizarán transferencias internacionales de datos a países fuera del Espacio
-          Económico Europeo sin las garantías adecuadas conforme al RGPD.
+          Actualmente, el sitio web utiliza proveedores como Vercel (alojamiento) y Gmail (correo/SMTP). En
+          caso de que exista acceso o tratamiento de datos fuera del Espacio Económico Europeo, EUFIA STRATEGIC GROUP S.L.
+          aplicará las garantías adecuadas exigidas por el RGPD, como cláusulas contractuales tipo u otros
+          mecanismos válidos en cada momento.
         </p>
       </div>
 
@@ -106,9 +108,8 @@
           posibles responsabilidades derivadas del tratamiento. En particular:
         </p>
         <ul class="list-disc list-inside space-y-2 ml-4 mt-4">
-          <li><strong>Consultas de contacto:</strong> los datos se conservarán mientras dure la relación comercial y, posteriormente, durante un plazo máximo de 3 años.</li>
-          <li><strong>Comunicaciones comerciales:</strong> hasta que el interesado revoque su consentimiento.</li>
-          <li><strong>Datos de navegación:</strong> según lo establecido en la <a href="/politica-cookies" class="text-brand hover:underline font-medium">Política de Cookies</a>.</li>
+          <li><strong>Consultas de contacto:</strong> los datos se conservarán durante un plazo máximo de 12 meses desde la última interacción, salvo obligación legal que exija un plazo superior.</li>
+          <li><strong>Datos de navegación y registros técnicos de seguridad:</strong> durante el tiempo estrictamente necesario para garantizar la seguridad, prevenir abusos y atender incidencias técnicas.</li>
         </ul>
       </div>
 
@@ -130,7 +131,8 @@
         <p class="mt-4">
           Para ejercer cualquiera de estos derechos, puede dirigirse a EUFIA STRATEGIC GROUP S.L. mediante correo electrónico a
           <a href="mailto:info@eufia.eu" class="text-brand hover:underline font-medium">info@eufia.eu</a>,
-          indicando en el asunto "Ejercicio de derechos RGPD" y adjuntando copia de su documento identificativo.
+          indicando en el asunto "Ejercicio de derechos RGPD". En caso necesario, podremos solicitar información
+          adicional para verificar su identidad.
         </p>
       </div>
 

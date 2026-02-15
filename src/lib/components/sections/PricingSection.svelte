@@ -118,7 +118,7 @@
 
         <div class="mt-6">
           <a
-            href="https://control-horario.eufia.eu"
+            href="https://control-horario.eufia.eu/register"
             target="_blank"
             rel="noopener noreferrer"
             class="block w-full text-center rounded-lg py-3 font-medium transition-all duration-200

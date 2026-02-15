@@ -72,13 +72,13 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start">
             <a
-              href="https://control-horario.eufia.eu"
+              href="https://control-horario.eufia.eu/register"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Comenzar prueba gratuita"
               class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand text-inverse px-6 py-3
                 hover:scale-102 transition-transform duration-200 font-medium">
-              <span>Prueba gratis 1 mes</span>
+              <span>Prueba 1 mes gratis</span>
               <span class="material-symbols-rounded">arrow_forward</span>
             </a>
             <a
